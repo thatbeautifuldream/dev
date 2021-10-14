@@ -2,14 +2,14 @@
 
 ## Basic Syntax
 
-https://drive.google.com/file/d/1_3Kn-vYCqI-CBOcD_NXXV-uGWnl3nOd0/view?usp=sharing
-https://www.pepcoding.com/resources/online-java-foundation/getting-started/print-all-primes-till-n-official/ojquestion
-https://www.pepcoding.com/resources/online-java-foundation/getting-started/count-digits-official/ojquestion
-https://www.pepcoding.com/resources/online-java-foundation/getting-started/rotate-a-number/topic
-https://www.pepcoding.com/resources/online-java-foundation/getting-started/print-fibonacci-numbers-till-n/topic
-https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern-type-1-official/ojquestion
-https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern-type-3-official/ojquestion
-https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern-type-5-official/ojquestion
+[fizz buzz](https://drive.google.com/file/d/1_3Kn-vYCqI-CBOcD_NXXV-uGWnl3nOd0/view?usp=sharing)
+[](https://www.pepcoding.com/resources/online-java-foundation/getting-started/print-all-primes-till-n-official/ojquestion)
+[](https://www.pepcoding.com/resources/online-java-foundation/getting-started/count-digits-official/ojquestion)
+[](https://www.pepcoding.com/resources/online-java-foundation/getting-started/rotate-a-number/topic)
+[](https://www.pepcoding.com/resources/online-java-foundation/getting-started/print-fibonacci-numbers-till-n/topic)
+[](https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern-type-1-official/ojquestion)
+[](https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern-type-3-official/ojquestion)
+[](https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern-type-5-official/ojquestion)
 
 HW: rest of getting started& pattern
 
