@@ -32,3 +32,4 @@ console.log("cap :", cap);
 // delete
 delete cap.address;
 console.log("cap :", cap);
+console.log(cap.xyz);
