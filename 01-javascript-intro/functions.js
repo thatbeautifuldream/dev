@@ -1,4 +1,4 @@
-// Non-Primitive Data types: Array, Object, Function, Date, RegExp
+ // Non-Primitive Data types: Array, Object, Function, Date, RegExp
 // function defination
 function sayHi(param) {
   console.log("Hello from sayHi");
