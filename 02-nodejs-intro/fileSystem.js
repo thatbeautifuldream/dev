@@ -6,3 +6,5 @@ let fs = require("fs");
 // create
 // fs.openSync("abc.txt", "w");
 fs.writeFileSync("abc.txt", "This is a text file.");
+// update
+fs.appendFileSync("abc.txt", "Are you happy now ?");
