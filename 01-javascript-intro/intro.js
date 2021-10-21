@@ -4,15 +4,16 @@ console.log("Hello World");
 let a;
 console.log(a); // undefined
 a = 10;
-console.log(a);
+console.log(a); // 10
 a = 10.1;
-console.log(a);
+console.log(a); // 10.1
 a = "Hello";
-console.log(a);
+console.log(a); // Hello
 a = true;
-console.log(a);
+console.log(a); // true
 a = null;
-console.log(a);
+console.log(a); // null
+
 // Variable types : Primitive Types : String, Number, Boolean, Null, Undefined
 // Variable types : Reference Types : Object, Array, Function, Date, RegExp, Error
 // Variable types : Complex Types : Map, Set, WeakMap, WeakSet
@@ -60,10 +61,10 @@ console.log(a);
 
 // JS-> Java / C / C++
 
-let number = 10;
-for (let i = 1; i <= number; i++) {
-  console.log("Number is : ", i);
-}
+// let number = 10;
+// for (let i = 1; i <= number; i++) {
+//   console.log("Number is : ", i);
+// }
 
 // is prime
 let number = 23;
@@ -75,4 +76,3 @@ for (let i = 2; i < number; i++) {
   }
 }
 console.log(isPrime);
-
