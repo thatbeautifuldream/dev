@@ -30,10 +30,13 @@ let fs = require("fs");
 // removes folder
 // fs.rmdirSync("myDirectory");
 // fs.exixstsSync("myDirectory");-> true or false
-let doesPathExist = fs.existsSync("myDirectory");
-console.log(doesPathExist);
-// fs.lstatSync("myDirectory"); -> stats
-let detailsObj = fs.lstatSync(__dirname + "\\fileSystem.js");
-let ans = detailsObj.isFile();
-console.log(ans);
-ans = detailsObj.isDirectory();
+// let doesPathExist = fs.existsSync("myDirectory");
+// console.log(doesPathExist);
+// // fs.lstatSync("myDirectory"); -> stats
+// let detailsObj = fs.lstatSync(__dirname + "\\fileSystem.js");
+// let ans = detailsObj.isFile();
+// console.log(ans);
+// ans = detailsObj.isDirectory();
+
+// C:\Users\Milind Mishra\Documents\git-repos\pepcoding-webdev\02-nodejs-intro
+
