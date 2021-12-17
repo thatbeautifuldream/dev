@@ -161,3 +161,6 @@ console.log(substract);
 // var keyword is function scoped
 // let keyword is block scoped
 // const keyword is block scoped
+
+
+// if java is car js is carpet
