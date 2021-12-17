@@ -55,3 +55,86 @@ let b = 'hello';
 b = 'bye';
 console.log(b);
 // reassignment is allowed in let
+
+// Diffrence in var and let
+// var and let are both used for variable declaration in javascript but the difference between them is that var is function scoped and let is block scoped.
+// var variables can be redeclared whereas let variables cannot.
+// It can be said that a variable declared with var is defined throughout the program as compared to let.
+
+// Loops in Js (Iterative Statements)
+
+for(var i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+// program to check if a number is prime or not
+var flag = true
+var num = 13
+for(var i = 2; i*i < num; i++) {
+    if(num % i == 0) {
+        flag = false
+        break
+    }
+}
+if(flag) {
+    console.log(num + ' is a prime number')
+}
+else {
+    console.log(num + ' is not a prime number')
+}
+
+// The second problem with var - scoping problem
+
+if(true) {
+    var x = 5;
+    console.log(x); // var keyword is function scoped!
+}
+console.log(x); // this can be accessed outside the if block as well!
+// this is problamatic!
+
+
+if(true) {
+    let x = 5;
+    console.log(x); // let keyword is block scoped!
+}
+console.log(x); // this will not work! Identifier 'x' has not been declared
+
+
+// const 
+
+const a = 5;
+console.log(a);
+a = 10; // this will not work!
+
+
+// functions in Js
+
+function sayHello() {
+    console.log('Hello');
+}   // function declaration
+
+sayHello(); // function invocation
+
+
+// pass parameters in a function
+
+function add(a, b) {
+    console.log(a + b);
+}
+add(3,4);
+
+function mult(a, b) {
+    return (a * b);
+}
+console.log(mult(3,4));
+
+// functions as first class citizens
+// js does not diffrentiate between functions and variables
+// functions can be passed as parameters to other functions
+// functions can be returned from other functions
+// functions can be assigned to variables
+
+let sayHi = function() {
+    console.log('Hi');
+}
+sayHi();
