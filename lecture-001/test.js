@@ -134,7 +134,30 @@ console.log(mult(3,4));
 // functions can be returned from other functions
 // functions can be assigned to variables
 
-let sayHi = function() {
-    console.log('Hi');
-}
-sayHi();
+let sayHi = function() { // anonymous function
+    console.log('Hi'); // in js functions are first class citizens
+} // function expression
+sayHi(); // is being called later on
+
+// IIFE (Immediately Invoked Function Expression)
+
+let add = (function(a,b) {
+    return (a + b);
+})(3,4); // this is called immediately invoked function expression
+console.log(add);
+
+let substract = (function(a,b) {
+    return (a-b);
+})(200,40);
+console.log(substract);
+
+// IIFE can be used in web automation
+// IIFE is used when we want to execute a function as soon as the page is loaded
+// IIFE is used when we want to execute a function once and then we don't want to use it again
+
+
+
+// "Its a sin to use var keyword in the global scope if you're a Js Developer"
+// var keyword is function scoped
+// let keyword is block scoped
+// const keyword is block scoped
