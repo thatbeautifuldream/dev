@@ -59,3 +59,28 @@ console.log(cars4);
 
 // *indexOf()* returns the index of the first occurrence of a specified value in an array
 console.log(cars4.indexOf("Porsche")); // *returns the index of the first occurrence of the specified value
+
+// *lastIndexOf()* returns the index of the last occurrence of a specified value in an array
+console.log(cars4.lastIndexOf("Porsche")); // *returns the index of the last occurrence of the specified value
+
+// *join()* joins all elements of an array into a string
+console.log(cars4.join("-")); // *joins the elements of the array with the specified separator
+
+// *reverse()* reverses the order of the elements in an array
+cars4.reverse(); // *reverses the order of the elements in the array
+console.log(cars4);
+
+// *sort()* sorts the elements of an array
+cars4.sort(); // *sorts the elements of the array
+console.log(cars4);
+
+// *forEach()* executes a provided function once for each array element (not recommended)
+cars4.forEach(function (element) {
+  console.log(element);
+});
+
+// *map()* creates a new array with the results of calling a provided function on every element in the calling array
+let cars5 = cars4.map(function (element) {
+  return element + "!";
+});
+console.log(cars5);
