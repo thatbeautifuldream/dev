@@ -118,3 +118,19 @@ console.log(str3.replace("pep", "Pep")); // *returns the string with Pep instead
 // str.toLowerCase() converts the string to lower case
 console.log(str3.toUpperCase()); // *returns the string in upper case
 console.log(str3.toLowerCase()); // *returns the string in lower case
+
+// String Concatenation
+let str4 = "Hello";
+let str5 = "World";
+console.log(str4 + " " + str5); // *returns Hello World
+// Concatenation with Methods
+// str.concat(str2) concatenates the string str2 to the string str
+// str.concat(" ",str2) concatenates the string str2 to the string str with a space in between
+// str.concat(" ",str2," ",str3) concatenates the string str2 to the string str with a space in between and str3
+console.log(str4.concat(" ", str5)); // *returns Hello World
+console.log(str4.concat(str5, " this is Milind")); // *returns HelloWorld this is Milind
+
+// Trimming
+// str.trim() removes whitespace from both ends (headspace, tailspace) of the string
+let str6 = "   Hello World   ";
+console.log(str6.trim()); // *returns Hello World (all whitespaces removed)
