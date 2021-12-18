@@ -134,3 +134,49 @@ console.log(str4.concat(str5, " this is Milind")); // *returns HelloWorld this i
 // str.trim() removes whitespace from both ends (headspace, tailspace) of the string
 let str6 = "   Hello World   ";
 console.log(str6.trim()); // *returns Hello World (all whitespaces removed)
+
+// * Objects in Js: (key-value pairs)
+// *Objects are mutable*
+// *Objects are not indexed*
+// *Objects are iterable*
+// *Objects are a collection of name-value pairs*
+// *Objects are stored in memory as a collection of name-value pairs*
+let obj = {}; // *object declaration*
+
+let person = {
+  // *object initialization*
+  name: "Milind",
+  age: 21,
+  city: "Bangalore",
+};
+console.log(obj);
+
+let captainAmerica = {
+  name: "Steve Rogers",
+  age: 35,
+  address: {
+    city: "New York",
+    state: "New York",
+    block: "A",
+    lane: "1",
+  },
+  friends: ["Tony Stark", "Bruce Banner", "Natasha Romanoff"],
+  superPowers: ["super strength", "super speed", "super healing"],
+  saysHi: function () {
+    console.log(`Captain says,"Hi!"`);
+  },
+};
+// *access property of an object
+console.log(captainAmerica.name); // *returns Steve Rogers (using dot notation)
+console.log(captainAmerica["name"]); // *returns Steve Rogers (using bracket notation)
+console.log(captainAmerica.age); // *returns 35
+console.log(captainAmerica.address.city); // *returns New York
+console.log(captainAmerica.friends[1]); // *returns Bruce Banner
+console.log(captainAmerica.superPowers[1]); // *returns super speed
+captainAmerica.saysHi(); // *returns Captain says,"Hi!"
+
+// *for in loop*
+// *iterates over the enumerable properties/key of an object*
+for (let key in captainAmerica) {
+  console.log("Key : ", key, ", Value : ", captainAmerica[key]);
+}
