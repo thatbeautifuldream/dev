@@ -155,12 +155,9 @@ console.log(substract);
 // IIFE is used when we want to execute a function as soon as the page is loaded
 // IIFE is used when we want to execute a function once and then we don't want to use it again
 
-
-
 // "Its a sin to use var keyword in the global scope if you're a Js Developer"
 // var keyword is function scoped
 // let keyword is block scoped
 // const keyword is block scoped
 
-
-// if java is car js is carpet
+// if java is car js is carpet 
