@@ -180,3 +180,12 @@ captainAmerica.saysHi(); // *returns Captain says,"Hi!"
 for (let key in captainAmerica) {
   console.log("Key : ", key, ", Value : ", captainAmerica[key]);
 }
+
+captainAmerica.isAvenger = true; // *adds a new property to the object or can update an existing property
+console.log(captainAmerica);
+
+captainAmerica.movies = ["Avengers: Endgame", "Avengers: Infinity War"]; // *adding a new property to an object
+console.log(captainAmerica);
+
+delete captainAmerica.age; // *deletes the age property of the object
+console.log(captainAmerica);
