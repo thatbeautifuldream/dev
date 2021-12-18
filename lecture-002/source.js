@@ -1,5 +1,5 @@
 // ! Lecture 2
-
+// ! Agenda : Arrays, Strings, Objects
 // Arrays provides an ordered collection of values/elements
 
 let arr = []; // *array declaration* dynamically sized array
@@ -63,9 +63,6 @@ console.log(cars4.indexOf("Porsche")); // *returns the index of the first occurr
 // *lastIndexOf()* returns the index of the last occurrence of a specified value in an array
 console.log(cars4.lastIndexOf("Porsche")); // *returns the index of the last occurrence of the specified value
 
-// *join()* joins all elements of an array into a string
-console.log(cars4.join("-")); // *joins the elements of the array with the specified separator
-
 // *reverse()* reverses the order of the elements in an array
 cars4.reverse(); // *reverses the order of the elements in the array
 console.log(cars4);
@@ -74,13 +71,50 @@ console.log(cars4);
 cars4.sort(); // *sorts the elements of the array
 console.log(cars4);
 
-// *forEach()* executes a provided function once for each array element (not recommended)
-cars4.forEach(function (element) {
-  console.log(element);
-});
+// *Multi-dimensional arrays
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+console.log(matrix);
 
-// *map()* creates a new array with the results of calling a provided function on every element in the calling array
-let cars5 = cars4.map(function (element) {
-  return element + "!";
-});
-console.log(cars5);
+// Strings in Js:
+// *Strings are immutable*
+// *Strings are objects*
+// *Strings are indexed*
+// *Strings are iterable*
+// *Strings are a sequence of characters*
+// *Strings are a sequence of 16-bit integers*
+// *Strings are stored in memory as an array of 16-bit integers*
+let str = "Hello World"; // *string declaration*
+let str2 = new String("Hello World"); // *string declaration*
+console.log(str);
+console.log(str2);
+
+// Methods:
+// *length of the string
+console.log(str.length); // *returns the length of the string
+
+// * extracting a part of the string
+// str.slice(startIndex, endIndex + 1) extracts a part of the string from startIndex to endIndex
+console.log(str.slice(0, 5)); // *returns the string from index 0 to index 4
+
+let str3 = "pepcoder";
+console.log(str3.slice(3, str3.length + 1)); // *returns the string from index 3 to the end
+// >> coder
+
+// * Substring expects start and length parameters
+// str.substring(param : from, param : length) extracts a part of the string from start to length (depricated)
+console.log(str3.substr(3, str3.length)); // *returns the string from index 3 till length 4
+// >> coder
+
+// Replacing a part of the string
+// str.replace(searchValue, replaceValue) replaces the first occurrence of searchValue with replaceValue
+console.log(str3.replace("pep", "Pep")); // *returns the string with Pep instead of Pepcoder
+
+// toUpperCase() and toLowerCase() Methods
+// str.toUpperCase() converts the string to upper case
+// str.toLowerCase() converts the string to lower case
+console.log(str3.toUpperCase()); // *returns the string in upper case
+console.log(str3.toLowerCase()); // *returns the string in lower case
