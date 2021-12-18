@@ -6,4 +6,4 @@ This repository consists of all the code snippets and projects from the pepcodin
   
 ## Tech Stack
 
-JavaScript, Node.js
+`JavaScript`, `Node.js`
