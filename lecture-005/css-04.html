@@ -1,4 +1,4 @@
-<!--! PADDING-->
+<!--! PADDING : adding padding inside element -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +10,38 @@
       .container {
         background-color: lightgreen;
         border: 3px solid tomato;
+
+        /*
+        This is the padding that will be added to the element on all sides. 
+        padding: 20px; 
+        This is the margin that will be added to the element on all sides.
+        margin: 20px;
+        */
+
+        /* we can set individual padding for each side of the element :
+        (top, right, bottom, left) (clockwise)
+        padding-top, padding-right, padding-bottom, padding-left properties
+        
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        
+        Simmilarly, we can set individual margin for each side of the element :
+        margin-top, margin-right, margin-bottom, margin-left properties
+        
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+
+        Either way (Syntax) :
+        padding : top-val px right-val px bottom-val px left-val px; 
+        margin : top-val px right-val px bottom-val px left-val px;
+        */
+
+        padding: 40px 20px 30px 20px;
+        margin: 20px 30px 20px 30px;
       }
     </style>
     <title>Document</title>
