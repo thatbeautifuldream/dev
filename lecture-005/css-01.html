@@ -1,0 +1,50 @@
+<!-- 
+Todays Topic of Discussion : CSS
+CSS : Cascading Style Sheets
+Used to style the HTML elements of a webpage.
+Three types of CSS:
+1. External CSS
+2. Inline CSS
+3. Embedded CSS (Internal)
+! CSS is a language that describes how HTML elements should be displayed.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .heading1 {
+        /* font family is used to change the font of the text */
+        font-family: "Courier New", Courier, monospace;
+        /* font-weight is used to change the weight of the text ranging from 100 to 900 (700 is more or less bold)
+        and other values like : bold, light, etc. */
+        font-weight: 90;
+        /* font-size is used to change the size of the text in terms of pixels, em, etc.
+        The value of font-size is in pixels.
+        pixel (a single unit used to form a picture/display/image element) : the measurement depends on the screen resolution / display size of the device.
+        px : unit of measurement for pixel.
+        em : a relative unit of measurement, basically it is a number multiplied by the current font size.
+        rem : a relative unit of measurement, basically it is a number multiplied by the root font size.
+        root font size is the font size of the root element (html, body, etc.) 
+        Generally it is 16px, but it can be changed by the user.
+         */
+        font-size: 40px;
+        /* color is used to change the color of the text */
+        color: blueviolet;
+      }
+      .heading2 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: #ff0000;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="heading1">Heading 1</h1>
+    <h1 class="heading2">Heading 2</h1>
+  </body>
+</html>
