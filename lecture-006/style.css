@@ -1,0 +1,33 @@
+/*
+ default styling for the page we use html tag selector
+ */
+html {
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  font-weight: 400;
+}
+header {
+  /*
+  flex is a flexbox library
+  flex helps us to create a layout inlines
+  */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem;
+  /*
+   margin (2 args): top/bottom right/left;  
+   margin (3 args): top right/left bottom;
+   1rem = 16px (rem is a unit equal to default font size)
+   */
+}
+nav {
+  width: 15rem;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+}
