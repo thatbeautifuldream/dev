@@ -22,7 +22,11 @@ header {
    */
 }
 nav {
-  width: 15rem;
+  /* the function of position relative is to make the nav bar stay at the top of the page */
+  position: relative;
+  top: 1rem;
+  right: 3rem;
+  width: 20rem;
 }
 ul {
   display: flex;
@@ -30,4 +34,15 @@ ul {
 }
 li {
   list-style: none;
+  font-size: 1.5rem;
+}
+.showcase_img {
+  /* 
+    viewport : the size of the browser window (height and width)
+    vh : viewport height
+    vw : viewport width
+
+    */
+  width: 95vw;
+  margin: 1rem;
 }
