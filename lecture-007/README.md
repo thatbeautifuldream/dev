@@ -1,6 +1,6 @@
 # Sample Website (🔗 Live Links)
 
-> [Sample Website](https://thatbeautifuldream.github.io/pepcoding-webdev/lecture-007/index.html)
+> [Sample Website `Completed Work`](https://thatbeautifuldream.github.io/pepcoding-webdev/lecture-007/index.html)
 
 ## Git & GitHub
 
