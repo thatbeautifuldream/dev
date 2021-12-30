@@ -46,3 +46,9 @@ li {
   width: 95vw;
   margin: 1rem;
 }
+.article {
+  display: flex;
+}
+.content {
+  text-align: center;
+}
