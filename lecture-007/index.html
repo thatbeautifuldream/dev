@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <!-- internal css -->
     <style>
+      /* default styling */
       html {
         border: 0;
         margin: 0;
@@ -14,12 +16,14 @@
           "Segoe UI Emoji", "Segoe UI Symbol";
         scroll-behavior: smooth;
       }
+      /* desendent selector, combinators */
       header h1 {
         float: left;
         margin-top: 2%;
         padding-left: 5%;
         font-weight: 400;
       }
+      /* class selector */
       .navigation {
         display: flex;
         float: right;
@@ -35,6 +39,10 @@
         text-decoration: none;
         /* transition: all 0.2s; */
       }
+      /*
+       anchor attributes (properties of css)
+       pseudo classes : :hover, :focus, :active, :visited
+       */
       a:link,
       a:visited {
         color: black;
