@@ -1,4 +1,4 @@
-# Talk about oppurtunities in GSoC
+# Talk about oppurtunities in GSoCand relivant Open Source projects
 
 ## GSoC : (Google Summer of Code)
 
