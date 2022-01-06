@@ -57,5 +57,5 @@ let isFile = fs.statSync("07-test").isFile(); // check if the directory is a fil
 console.log("The directory is a file: " + isFile); // print the message : false
 
 // read inside a directory : fs.readdirSync() - synchronous
-let files = fs.readdirSync("07-test"); // read the files inside the directory
+let files = fs.readdirSync("07-test"); // read the files inside the directory path given in the argument
 console.log(files); // print the files
