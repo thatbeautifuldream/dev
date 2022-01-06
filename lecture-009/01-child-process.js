@@ -15,6 +15,12 @@ const cp = require("child_process"); // module is imported
 // console.log("Trying to open VS Code from current directory");
 // cp.execSync("code .");
 
-console.log("Opening browser with google.com");
+// console.log("Opening browser with google.com");
 // cp.execSync("start chrome google.com"); // start is used to open browser in Windows
-cp.execSync("xdg-open https://google.com"); // for linux
+// cp.execSync("open https://google.com"); // for mac
+// cp.execSync("xdg-open https://google.com"); // for linux
+// cp.execSync("google-chrome https://google.com"); // for ubuntu
+
+// Running an external file from nodejs
+console.log("Trying to run an external file");
+cp.execSync("node ./02-test.js");
