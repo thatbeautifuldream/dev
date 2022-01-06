@@ -1,0 +1,1 @@
+This is the content of the file <05-test.txt>
