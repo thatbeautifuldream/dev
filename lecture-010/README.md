@@ -1,6 +1,6 @@
 # Agenda for the lecture
 
-## fs, path module
+## `fs` (file system), `path` module
 
 > 1. Copying file using `fs module`
 > 2. Exploring the `path module`
