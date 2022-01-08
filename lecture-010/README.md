@@ -5,3 +5,5 @@
 > `npm` basics and installing packages
 
 > importing and exporting user defined modules
+
+> ignoring the `node_modules` folder using `.gitignore`
