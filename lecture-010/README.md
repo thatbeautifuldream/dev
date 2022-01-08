@@ -9,5 +9,9 @@
 
 > 1. `npm` basics and installing packages
 > 2. using `figlet` and `chalk` modules to print text
-> 3. importing and exporting user defined modules
-> 4. ignoring the `node_modules` folder using `.gitignore`
+> 3. ignoring the `node_modules` folder using `.gitignore`
+
+## `js` modules
+
+> 1. Understanding the `module.exports` object
+> 2. importing and exporting user defined modules using `require()`
