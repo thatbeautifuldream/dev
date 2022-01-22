@@ -17,3 +17,4 @@
 > 1. Creation of Execution Context - Memory allocation and initialization of variables and functions.
 > 2. Execution of Code - Execution of the code.
 > 3. Destruction of Execution Context - Memory deallocation (Garbage Collection)
+
