@@ -18,3 +18,5 @@
 > 2. Execution of Code - Execution of the code.
 > 3. Destruction of Execution Context - Memory deallocation (Garbage Collection)
 
+![Screenshot 2022-01-22 at 9 58 44 PM](https://user-images.githubusercontent.com/28717686/150647134-4c7c1065-7a35-4a76-848b-c4c9b29e5662.png)
+
