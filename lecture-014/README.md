@@ -194,3 +194,6 @@ console.log(greet, typeof greet);
 { name: 'John', age: 30 } object
 [Function: greet] function
 ```
+
+> 1. Primitive Datatypes gets stored in `Stack Memory`.
+> 2. Refrence Datatypes gets stored in `Heap Memory`.
