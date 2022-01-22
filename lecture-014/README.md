@@ -197,3 +197,15 @@ console.log(greet, typeof greet);
 
 > 1. Primitive Datatypes gets stored in `Stack Memory`.
 > 2. Refrence Datatypes gets stored in `Heap Memory`.
+
+```javascript
+let firstPerson = "John";
+let secondPerson = firstPerson; // copy
+firstPerson = "Jane"; // change
+console.log(firstPerson, secondPerson); // Jane John
+```
+
+```fish
+⋊> ~/D/g/pepcoding-webdev on main ⨯ node lecture-014/refrenceDataType.js
+Jane John
+```
