@@ -110,7 +110,10 @@ const a = 2;
 
 ## Data Types in JavaScript
 
-> 2 categories of data types in JavaScript: Primitive and Reference types.
+> There are 2 categories of data types in JavaScript
+>
+> Primitive and Reference types.
+>
 > Primitive types are:
 >
 > 1. Number : `1`, `1.5`, `0`, `-1`, `-1.5`, `Infinity`, `-Infinity`, `NaN`
