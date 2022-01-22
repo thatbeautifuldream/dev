@@ -107,3 +107,29 @@ const a = 2;
 ## Resources to read about Temporal Dead Zone
 
 [Temporal Dead Zone](https://medium.com/@Esakkimuthu/temporal-dead-zone-3dd6d3fbcbda)
+
+## Data Types in JavaScript
+
+> 2 categories of data types in JavaScript: Primitive and Reference types.
+> Primitive types are:
+>
+> 1. Number : `1`, `1.5`, `0`, `-1`, `-1.5`, `Infinity`, `-Infinity`, `NaN`
+> 2. String : `"Hello"`, `'Hello'`, `"1"`, `'1'`
+> 3. Boolean : `true`, `false`
+> 4. Symbol : `Symbol()`
+> 5. Undefined : `undefined`
+> 6. Null : `null`
+> 7. NaN : `NaN`
+
+> Reference types are:
+>
+> 1. Object : `{}`, `new Object()`
+> 2. Array : `[]`, `new Array()`
+> 3. Function : `function() {}`
+> 4. Date : `new Date()`
+> 5. RegExp : `/\w+/`
+> 6. Error : `new Error()`
+> 7. Map : `new Map()`
+> 8. Set : `new Set()`
+> 9. WeakMap : `new WeakMap()`
+> 10. WeakSet : `new WeakSet()`
