@@ -93,6 +93,7 @@ function greet() {
 
 > Good practice is to avoid using the temporal dead zone. (Scoping rules, accessablity, etc.)
 > Temporal dead zone is a feature of JavaScript that allows you to declare a variable before you use it.
+> `let` and `const` are not hoisted and when accessed before declaration, it throws an error.
 
 ```javascript
 console.log(a); // undefined -> a is not defined (not hoisted)
