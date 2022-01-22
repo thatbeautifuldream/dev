@@ -239,4 +239,13 @@ console.log(fp, sp); // { name: 'Arshad', age: 30 } { name: 'Arshad', age: 30 }
 
 ![Screenshot 2022-01-22 at 11 52 11 PM](https://user-images.githubusercontent.com/28717686/150650846-2ef6b73e-69cc-40cb-84d2-8682d71c86ae.png)
 
-> Solutions to the above problem : `spread operator`, `object.assign`, `deep copy`, `shallow copy`
+> 1. Solutions to the above problem : `spread operator`, `object.assign`, `deep copy`, `shallow copy`
+> 2. `spread operator` : `...`
+> 3. `object.assign` : `Object.assign()`
+> 4. `deep copy` : `JSON.parse(JSON.stringify(obj))`
+> 5. `shallow copy` : `Object.assign({}, obj)`
+
+> 1. Altough Js is synchronous, it is possible to make asynchronous calls in JavaScript.
+> 2. AJAX is an example of asynchronous call.
+> 3. AJAX stands for Asynchronous JavaScript and XML.
+> 4. Callbacks, Promises and Async/Await are some of the ways to make asynchronous calls in JavaScript.
