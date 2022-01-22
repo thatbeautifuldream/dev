@@ -64,7 +64,7 @@ then the global execution context is destroyed
 
 [Blog 1](https://medium.com/innovation-incubator/javascript-execution-context-c5d807d206f5)
 
-## Hoisting
+## Hoisting : `Hoisting is JavaScript's default behavior of moving declarations to the top.`
 
 > 1. Hoisting is the process of moving declarations to the top of the current scope.
 > 2. Its is relative to the current execution context.
