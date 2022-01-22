@@ -84,3 +84,6 @@ function greet() {
 ```
 
 ## Understanding Hoisting | Example (Illustrated with Execution Context in Phase 1 and Phase 2)
+
+![Screenshot 2022-01-22 at 10 34 02 PM](https://user-images.githubusercontent.com/28717686/150648413-5c558c6f-47ce-4408-9df2-7a3d4c2e9221.png)
+
