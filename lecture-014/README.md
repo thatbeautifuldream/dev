@@ -218,7 +218,7 @@ Hitesh Arshad
 
 > Stack is `LIFO (Last In First Out)`
 
-## Concept of access by reference
+## Refrence Data Types & Concept of `access by reference`
 
 ```javascript
 let fp = {
