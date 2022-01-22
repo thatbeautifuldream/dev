@@ -36,3 +36,25 @@ console.log(sum2);
 ## Execution Context explained w/o Code
 
 ![Screenshot 2022-01-22 at 9 58 44 PM](https://user-images.githubusercontent.com/28717686/150647134-4c7c1065-7a35-4a76-848b-c4c9b29e5662.png)
+
+## Example of Execution Context : `Square Function`
+
+```javascript
+var n = 2;
+function square(n) {
+  return n * n;
+}
+var sq1 = square(n);
+var sq2 = square(2);
+console.log(sq1);
+console.log(sq2);
+```
+
+## Flow in Execution Context
+
+> execution context in js
+> first the global execution context is created
+> then the function is executed
+> then the local execution context is created
+> then the local execution context is destroyed
+> then the global execution context is destroyed
