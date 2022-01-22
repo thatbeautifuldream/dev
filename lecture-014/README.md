@@ -52,9 +52,11 @@ console.log(sq2);
 
 ## Flow in Execution Context
 
-> execution context in js
-> first the global execution context is created
-> then the function is executed
-> then the local execution context is created
-> then the local execution context is destroyed
-> then the global execution context is destroyed
+```
+execution context in js
+first the global execution context is created
+then the function is executed
+then the local execution context is created
+then the local execution context is destroyed
+then the global execution context is destroyed
+```
