@@ -59,3 +59,7 @@ then the local execution context is created
 then the local execution context is destroyed
 then the global execution context is destroyed
 ```
+
+## Resources to read about Execution Context
+
+[Blog 1](https://medium.com/innovation-incubator/javascript-execution-context-c5d807d206f5)
