@@ -199,13 +199,13 @@ console.log(greet, typeof greet);
 > 2. Refrence Datatypes gets stored in `Heap Memory`.
 
 ```javascript
-let firstPerson = "John";
+let firstPerson = "Hitesh";
 let secondPerson = firstPerson; // copy
-firstPerson = "Jane"; // change
-console.log(firstPerson, secondPerson); // Jane John
+firstPerson = "Arshad"; // change
+console.log(firstPerson, secondPerson); // Hitesh Arshad
 ```
 
 ```fish
 ⋊> ~/D/g/pepcoding-webdev on main ⨯ node lecture-014/refrenceDataType.js
-Jane John
+Hitesh Arshad
 ```

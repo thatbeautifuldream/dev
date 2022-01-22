@@ -20,10 +20,10 @@
 // // { name: 'John', age: 30 } object
 // // [Function: greet] function
 
-let firstPerson = "John";
+let firstPerson = "Hitesh";
 let secondPerson = firstPerson; // copy
-firstPerson = "Jane"; // change
-console.log(firstPerson, secondPerson); // Jane John
+firstPerson = "Arshad"; // change
+console.log(firstPerson, secondPerson); // Arshad Hitesh
 
 // ⋊> ~/D/g/pepcoding-webdev on main ⨯ node lecture-014/refrenceDataType.js
-// Jane John
+// Arshad Hitesh
