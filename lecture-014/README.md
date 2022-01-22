@@ -103,3 +103,7 @@ const a = 2;
 ![Screenshot 2022-01-22 at 10 49 15 PM](https://user-images.githubusercontent.com/28717686/150648980-b05d8314-2821-4c0d-a825-38d08d8acbfd.png)
 
 > The thing with `var` is that it is hoisted. It was introduced in `ES5`, which was before `let` and `const`.
+
+## Resources to read about Temporal Dead Zone
+
+[Temporal Dead Zone](https://medium.com/@Esakkimuthu/temporal-dead-zone-3dd6d3fbcbda)
