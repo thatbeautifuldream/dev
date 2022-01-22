@@ -1,6 +1,6 @@
 # Lecture 013 | JavaScript Interview Prepration
 
-## Note : `Java Script is a Synchronous Single Threaded Language`
+## Note : `JavaScript is a Synchronous Single Threaded Language`
 
 ## Execution Context in Js
 
