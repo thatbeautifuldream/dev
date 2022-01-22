@@ -89,7 +89,7 @@ function greet() {
 
 ![Screenshot 2022-01-22 at 10 34 02 PM](https://user-images.githubusercontent.com/28717686/150648413-5c558c6f-47ce-4408-9df2-7a3d4c2e9221.png)
 
-## The good practice and Temporal Dead Zone
+## Temporal Dead Zone | Good Practices
 
 > Good practice is to avoid using the temporal dead zone. (Scoping rules, accessablity, etc.)
 > Temporal dead zone is a feature of JavaScript that allows you to declare a variable before you use it.
