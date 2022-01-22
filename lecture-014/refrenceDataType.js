@@ -27,3 +27,15 @@ console.log(firstPerson, secondPerson); // Arshad Hitesh
 
 // ⋊> ~/D/g/pepcoding-webdev on main ⨯ node lecture-014/refrenceDataType.js
 // Arshad Hitesh
+
+// access by reference
+let fp = {
+  name: "Hitesh",
+  age: 30,
+};
+let sp = fp; // copy
+fp.name = "Arshad"; // change
+console.log(fp, sp); // { name: 'Arshad', age: 30 } { name: 'Arshad', age: 30 }
+
+// ⋊> ~/D/g/pepcoding-webdev on main ◦ node lecture-014/refrenceDataType.js
+// { name: 'Arshad', age: 30 } { name: 'Arshad', age: 30 }

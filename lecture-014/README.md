@@ -219,3 +219,20 @@ Hitesh Arshad
 > Stack is `LIFO (Last In First Out)`
 
 ## Concept of access by reference
+
+```javascript
+let fp = {
+  name: "Hitesh",
+  age: 30,
+};
+let sp = fp; // copy
+fp.name = "Arshad"; // change
+console.log(fp, sp); // { name: 'Arshad', age: 30 } { name: 'Arshad', age: 30 }
+```
+
+```fish
+⋊> ~/D/g/pepcoding-webdev on main ◦ node lecture-014/refrenceDataType.js
+{ name: 'Arshad', age: 30 } { name: 'Arshad', age: 30 }
+```
+
+## Heap Memory
