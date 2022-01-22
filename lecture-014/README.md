@@ -212,8 +212,10 @@ console.log(firstPerson, secondPerson); // Hitesh Arshad
 Hitesh Arshad
 ```
 
+> Illustrating access by value : `firstPerson` is a copy of `secondPerson`
+
 ![Screenshot 2022-01-22 at 11 39 17 PM](https://user-images.githubusercontent.com/28717686/150650417-564dce2a-858e-4bfc-a544-aee308a96e8b.png)
 
-> Stack is `LIFO (Last In First Out)` | Illustrating access by value : `firstPerson` is a copy of `secondPerson`
+> Stack is `LIFO (Last In First Out)`
 
 ## Concept of access by reference
