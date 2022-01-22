@@ -63,3 +63,24 @@ then the global execution context is destroyed
 ## Resources to read about Execution Context
 
 [Blog 1](https://medium.com/innovation-incubator/javascript-execution-context-c5d807d206f5)
+
+## Hoisting
+
+> Hoisting is the process of moving declarations to the top of the current scope.
+
+## Hoisting in JavaScript
+
+```javascript
+console.log(a);
+var a = 2;
+greet();
+function greet() {
+  console.log("Hello!");
+}
+
+// ⋊> ~/D/g/pepcoding-webdev on main ⨯ node lecture-014/hoisting.js
+// undefined
+// Hello!
+```
+
+## Understanding Hoisting | Example (Illustrated with Execution Context in Phase 1 and Phase 2)
