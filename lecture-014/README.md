@@ -213,3 +213,5 @@ Hitesh Arshad
 ```
 
 ![Screenshot 2022-01-22 at 11 39 17 PM](https://user-images.githubusercontent.com/28717686/150650417-564dce2a-858e-4bfc-a544-aee308a96e8b.png)
+
+> Stack is `LIFO (Last In First Out)`
