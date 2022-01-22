@@ -236,3 +236,6 @@ console.log(fp, sp); // { name: 'Arshad', age: 30 } { name: 'Arshad', age: 30 }
 ```
 
 ## Heap Memory
+
+![Screenshot 2022-01-22 at 11 52 11 PM](https://user-images.githubusercontent.com/28717686/150650846-2ef6b73e-69cc-40cb-84d2-8682d71c86ae.png)
+
