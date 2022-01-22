@@ -198,6 +198,8 @@ console.log(greet, typeof greet);
 > 1. Primitive Datatypes gets stored in `Stack Memory`.
 > 2. Refrence Datatypes gets stored in `Heap Memory`.
 
+## Excercise : `Primitive Data Types` & `Stack Memory`
+
 ```javascript
 let firstPerson = "Hitesh";
 let secondPerson = firstPerson; // copy
