@@ -66,7 +66,9 @@ then the global execution context is destroyed
 
 ## Hoisting
 
-> Hoisting is the process of moving declarations to the top of the current scope.
+> 1. Hoisting is the process of moving declarations to the top of the current scope.
+> 2. Its is relative to the current execution context.
+> 3. It is a JavaScript feature that allows you to declare a variable before you use it.
 
 ## Hoisting in JavaScript
 
@@ -86,4 +88,3 @@ function greet() {
 ## Understanding Hoisting | Example (Illustrated with Execution Context in Phase 1 and Phase 2)
 
 ![Screenshot 2022-01-22 at 10 34 02 PM](https://user-images.githubusercontent.com/28717686/150648413-5c558c6f-47ce-4408-9df2-7a3d4c2e9221.png)
-
