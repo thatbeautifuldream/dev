@@ -156,7 +156,7 @@ let e = null; // a bug in js which hasnt been fixed yet
 console.log(e, typeof e); // null is a primitive type still has a typeof object
 ```
 
-```shell
+```fish
 ⋊> ~/D/g/pepcoding-webdev on main ⨯ node lecture-014/datatypes.js
 Hello string
 2.5 number
