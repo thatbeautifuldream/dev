@@ -33,6 +33,6 @@ console.log(sum1);
 console.log(sum2);
 ```
 
-## Execution Context Example
+## Execution Context explained w/o Code
 
 ![Screenshot 2022-01-22 at 9 58 44 PM](https://user-images.githubusercontent.com/28717686/150647134-4c7c1065-7a35-4a76-848b-c4c9b29e5662.png)
