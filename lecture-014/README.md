@@ -164,3 +164,6 @@ true boolean
 undefined undefined
 null object
 ```
+
+## A good read/research on null being a typeof object in JavaScript : the `missing object`
+
