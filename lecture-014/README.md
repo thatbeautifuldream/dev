@@ -154,11 +154,13 @@ console.log(d, typeof d);
 
 let e = null; // a bug in js which hasnt been fixed yet
 console.log(e, typeof e); // null is a primitive type still has a typeof object
+```
 
-// ⋊> ~/D/g/pepcoding-webdev on main ⨯ node lecture-014/datatypes.js
-// Hello string
-// 2.5 number
-// true boolean
-// undefined undefined
-// null object
+```shell
+⋊> ~/D/g/pepcoding-webdev on main ⨯ node lecture-014/datatypes.js
+Hello string
+2.5 number
+true boolean
+undefined undefined
+null object
 ```
