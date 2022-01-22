@@ -113,9 +113,9 @@ const a = 2;
 > There are 2 categories of data types in JavaScript
 >
 > Primitive and Reference types.
->
-> Primitive types are:
->
+
+## Primitive types are:
+
 > 1. Number : `1`, `1.5`, `0`, `-1`, `-1.5`, `Infinity`, `-Infinity`, `NaN`
 > 2. String : `"Hello"`, `'Hello'`, `"1"`, `'1'`
 > 3. Boolean : `true`, `false`
@@ -124,8 +124,8 @@ const a = 2;
 > 6. Null : `null`
 > 7. NaN : `NaN`
 
-> Reference types are:
->
+## Reference types are:
+
 > 1. Object : `{}`, `new Object()`
 > 2. Array : `[]`, `new Array()`
 > 3. Function : `function() {}`
