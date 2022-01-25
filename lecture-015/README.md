@@ -78,3 +78,14 @@ This is data from file.txt
 ![image](https://user-images.githubusercontent.com/28717686/151025526-3671deb4-a790-4665-bd1a-e7bdd09b5fcc.png)
 
 > Visulaize the flow of execution of asynchronous callbacks [`Click Me ⚡`](https://www.jsv9000.app/)
+
+## Introduction to Web Scrapping
+
+> Web Scraping is a technique for extracting data from websites.
+> It is a process of `traversing the website` and `extracting the data`.
+> It is a type of `reverse engineering`.
+
+## Use Case of Web Scraping | Scraping [`covid stats`](https://www.worldometers.info/coronavirus/) for Corona Virus Data
+
+> We can extract meaningfull data from the website.
+
