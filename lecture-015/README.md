@@ -111,3 +111,5 @@ This is data from file.txt
 ```bash
 npm i request cheerio
 ```
+
+> Sidenote : Keep the nessasarary dependencies installed for next lecture to work.
