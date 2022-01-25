@@ -67,8 +67,10 @@ This is data from file.txt
 
 > Q. `error first callbacks` : error first callbacks are functions that are passed to handle error events
 
+## Format of Asynchronous Callbacks Internal Working of Node.js
+
 ![async](https://user-images.githubusercontent.com/28717686/151028564-622fe732-3ef6-459c-824e-24ac04028e68.jpeg)
 
+## Working with Asynchronous Callbacks
 
 ![image](https://user-images.githubusercontent.com/28717686/151025526-3671deb4-a790-4665-bd1a-e7bdd09b5fcc.png)
-
