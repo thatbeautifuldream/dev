@@ -7,6 +7,8 @@
 > 3. They are also used to execute code in response to events.
 > 4. They are used to execute code in response to asynchronous events.
 
+> Explaining `Callback Functions`:
+
 ```javascript
 function printFirstName(firstName, cb) {
   // cb is a callback function parameter
@@ -49,7 +51,7 @@ function cb(err, text) {
 console.log("after"); // after file reading ends
 ```
 
-Output:
+> Output:
 
 ```bash
 Milind Mishra@milind MINGW64 ~/Documents/git-repos/pepcoding-webdev (main)
