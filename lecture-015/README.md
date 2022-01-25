@@ -91,3 +91,8 @@ This is data from file.txt
 
 ![image](https://user-images.githubusercontent.com/28717686/151031996-d502b64d-0b18-4928-b93d-614452f02a75.png)
 
+## About, Request Response Cycle | Client Server Architecture
+
+> The `request-response cycle` is a cycle of events that occur between a `client and a server`.
+> The client sends a `request` to the server, which then sends a `response` back to the client.
+> HTTP works by using a request-response cycle.
