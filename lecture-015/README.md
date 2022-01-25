@@ -66,3 +66,6 @@ This is data from file.txt
 ```
 
 > Q. `error first callbacks` : error first callbacks are functions that are passed to handle error events
+
+![image](https://user-images.githubusercontent.com/28717686/151025526-3671deb4-a790-4665-bd1a-e7bdd09b5fcc.png)
+
