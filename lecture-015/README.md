@@ -2,15 +2,22 @@
 
 ## Callback Functions in Js
 
-> 1. Callback functions are functions that are passed to other functions as arguments, and called later.
-> 2. They are used to control the flow of a program.
+> 1. Callback functions are functions that are passed to other functions as arguments.
+> 2. They are used to execute code after the function that calls them is finished executing.
+> 3. They are also used to execute code in response to events.
+> 4. They are used to execute code in response to asynchronous events.
 
 ```javascript
-function callback(err, data) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log(data);
-  }
+function printFirstName(firstName, cb) {
+  // cb is a callback function parameter
+  console.log(firstName);
+  cb("Doe"); // cb is passed to printLastName
 }
+
+function printLastName(lastName) {
+  // function that is passed to printFirstName as a callback
+  console.log(lastName);
+}
+
+printFirstName("John", printLastName); // prints "John" and "Doe"
 ```
