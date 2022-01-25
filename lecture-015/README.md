@@ -96,3 +96,6 @@ This is data from file.txt
 > The `request-response cycle` is a cycle of events that occur between a `client and a server`.
 > The client sends a `request` to the server, which then sends a `response` back to the client.
 > HTTP works by using a request-response cycle.
+
+
+![image](https://user-images.githubusercontent.com/28717686/151032518-34c6dada-92bb-4ff4-bad4-95094201b9ff.png)
