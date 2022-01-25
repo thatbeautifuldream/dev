@@ -103,10 +103,10 @@ This is data from file.txt
 
 ![image](https://user-images.githubusercontent.com/28717686/151032855-c1175eac-fda1-431d-a315-c64f02d3ce21.png)
 
-## Using 2 npm libraries to scrape data from websites
+## Using 2 `npm libraries` to scrape data from websites
 
-> 1. `request` - is a node.js module that makes it easy to make HTTP requests and get HTML documents from websites.
-> 2. `cheerio` - A library that helps us to scrape data from websites and the meaningfull data.
+> 1. [`request`](https://www.npmjs.com/package/request) - is a node.js module that makes it easy to make HTTP requests and get HTML documents from websites.
+> 2. [`cheerio`](https://www.npmjs.com/package/cheerio) - A library that helps us to scrape data from websites and the meaningfull data.
 
 ```bash
 npm i request cheerio
