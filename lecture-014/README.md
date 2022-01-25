@@ -1,4 +1,4 @@
-# Lecture 013 | JavaScript Interview Prepration
+# Lecture 014 | JavaScript Interview Prepration
 
 ## Note : `JavaScript is a Synchronous Single Threaded Language`
 
