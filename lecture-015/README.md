@@ -97,8 +97,9 @@ This is data from file.txt
 > The client sends a `request` to the server, which then sends a `response` back to the client.
 > HTTP works by using a request-response cycle.
 
-
 ![image](https://user-images.githubusercontent.com/28717686/151032518-34c6dada-92bb-4ff4-bad4-95094201b9ff.png)
+
+## Using page source and inspect element in browser window
 
 ![image](https://user-images.githubusercontent.com/28717686/151032855-c1175eac-fda1-431d-a315-c64f02d3ce21.png)
 
