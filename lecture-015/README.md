@@ -21,3 +21,48 @@ function printLastName(lastName) {
 
 printFirstName("John", printLastName); // prints "John" and "Doe"
 ```
+
+## Reading files in Node.js Synchronously and Asynchronously
+
+```javascript
+// Syncronous way of reading a file
+
+console.log("before"); // before file reading starts
+const text = fs.readFileSync("./lecture-015/file.txt", "utf8");
+console.log(text);
+console.log("after"); // after file reading ends
+
+// Asyncronous way of reading a file
+// readFile() expects a callback function as a parameter
+
+console.log("before"); // before file reading starts
+fs.readFile("./lecture-015/file.txt", "utf8", cb);
+
+function cb(err, text) {
+  if (err) {
+    console.log("error");
+  } else {
+    console.log(text);
+  }
+}
+
+console.log("after"); // after file reading ends
+```
+
+Output:
+
+```bash
+Milind Mishra@milind MINGW64 ~/Documents/git-repos/pepcoding-webdev (main)
+$ node lecture-015/callback.js
+John
+Doe
+23
+before
+This is data from file.txt
+after
+before
+after
+This is data from file.txt
+```
+
+> Q. `error first callbacks` : error first callbacks are functions that are passed to handle error events
