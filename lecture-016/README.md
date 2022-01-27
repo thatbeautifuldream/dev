@@ -131,3 +131,42 @@ Total Recovered :  288,406,934
 
 ![image](https://user-images.githubusercontent.com/28717686/151411446-712f4ab9-36e7-4538-a2af-4d0f328ae81a.png)
 
+> Task code :
+
+```js
+const request = require("request");
+const cheerio = require("cheerio");
+
+let url =
+  "https://www.espncricinfo.com/series/ipl-2020-21-1210595/chennai-super-kings-vs-kings-xi-punjab-53rd-match-1216506/ball-by-ball-commentary";
+
+request(url, cb);
+
+function cb(error, response, html) {
+  if (error) {
+    console.log(error);
+  } else {
+    handleHtml(html);
+  }
+}
+
+// Task : Scrape the data of last ball (18.5) commentary from the website
+
+function handleHtml(html) {
+  let $ = cheerio.load(html);
+  // target last ball commentary
+  let lbc = $(
+    ".d-flex.match-comment-padder.align-items-center .match-comment-long-text"
+  );
+  let data = $(lbc[0]).text();
+  console.log(data);
+}
+```
+
+> Run
+
+```bash
+$ node EspnCricInfo/lbc.js
+misfield at cover and that is it for both teams this season. Full and just outside off, driven hurredly into the co
+vers and it's past the dive
+```
