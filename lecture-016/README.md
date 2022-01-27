@@ -175,4 +175,4 @@ misfield at cover and that is it for both teams this season. Full and just outsi
 vers and it's past the dive
 ```
 
-## Home Work : [`NodeJs Challenge 📽️`](https://www.youtube.com/watch?v=8AM2S94SBSY&list=PL-Jc9J83PIiEeD3I4VXETPDmzJ3Z1rWb4&index=7)
+## Home Work : [`NodeJs Challenge 📽️`](https://www.youtube.com/watch?v=8AM2S94SBSY&list=PL-Jc9J83PIiEeD3I4VXETPDmzJ3Z1rWb4&index=7) `fs-module` `path-module`
