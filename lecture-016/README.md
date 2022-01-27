@@ -131,7 +131,7 @@ Total Recovered :  288,406,934
 
 ![image](https://user-images.githubusercontent.com/28717686/151411446-712f4ab9-36e7-4538-a2af-4d0f328ae81a.png)
 
-> Task code :
+> Task code : `The task was to hit and trial CSS Selectors to target the specified target element`
 
 ```js
 const request = require("request");
