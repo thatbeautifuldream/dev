@@ -21,3 +21,11 @@ request(
 ```bash
 node ./request.js
 ```
+
+> Status Code `200: OK`
+
+```bash
+$ node request.js
+error: null
+statusCode: 200
+```
