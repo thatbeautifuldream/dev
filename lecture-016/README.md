@@ -155,9 +155,7 @@ function cb(error, response, html) {
 function handleHtml(html) {
   let $ = cheerio.load(html);
   // target last ball commentary
-  let lbc = $(
-    ".d-flex.match-comment-padder.align-items-center .match-comment-long-text"
-  );
+  let lbc = $(".match-comment-wrapper .match-comment-long-text");
   let data = $(lbc[0]).text();
   console.log(data);
 }
