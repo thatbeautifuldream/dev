@@ -1,4 +1,6 @@
 const request = require("request");
+
+console.log("Before");
 request(
   "https://www.worldometers.info/coronavirus/",
   function (error, response, body) {
@@ -7,4 +9,6 @@ request(
     // console.log("body:", body); // Print the HTML for the given homepage.
   }
 );
+console.log("After");
 
+module.exports = request;

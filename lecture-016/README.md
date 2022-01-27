@@ -39,3 +39,52 @@ $ node request.js
 error: null
 statusCode: 200
 ```
+
+> Grabbing the HTML
+
+```js
+const request = require("request");
+const cheerio = require("cheerio");
+
+// to analyse async behaviour
+console.log("Before");
+
+request("https://www.worldometers.info/coronavirus/", cb);
+
+function cb(error, response, html) {
+  if (error) {
+    console.log("error:", error); // Print the error if one occurred
+  } else {
+    handleHtml(html);
+  }
+}
+
+function handleHtml(html) {
+  let setTool = cheerio.load(html);
+  let contentArr = setTool(".maincounter-number span");
+  //   for (let i = 0; i < contentArr.length; i++) {
+  //     let data = setTool(contentArr[i]).text();
+  //     console.log(data);
+  //   }
+
+  let totalCases = setTool(contentArr[0]).text();
+  let totalDeaths = setTool(contentArr[1]).text();
+  let totalRecovered = setTool(contentArr[2]).text();
+  console.log("Total Casess : ", totalCases);
+  console.log("Total Deaths : ", totalDeaths);
+  console.log("Total Recovered : ", totalRecovered);
+}
+
+console.log("After");
+```
+
+> Run
+
+```bash
+$ node coronaDetails.js
+Before
+After
+Total Casess :  364,513,804
+Total Deaths :  5,648,937
+Total Recovered :  288,406,934
+```
