@@ -102,7 +102,7 @@ function handleHtml(html) {
   let totalCases = setTool(contentArr[0]).text();
   let totalDeaths = setTool(contentArr[1]).text();
   let totalRecovered = setTool(contentArr[2]).text();
-  console.log("Total Casess : ", totalCases);
+  console.log("Total Cases : ", totalCases);
   console.log("Total Deaths : ", totalDeaths);
   console.log("Total Recovered : ", totalRecovered);
 }
@@ -116,7 +116,7 @@ console.log("After");
 $ node coronaDetails.js
 Before
 After
-Total Casess :  364,513,804
+Total Cases :  364,513,804
 Total Deaths :  5,648,937
 Total Recovered :  288,406,934
 ```
