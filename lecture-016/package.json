@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "request": "^2.88.2"
+  },
+  "name": "lecture-016",
+  "description": "corona web scraping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milind Mishra",
+  "license": "ISC"
+}
