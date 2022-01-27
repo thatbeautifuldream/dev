@@ -55,7 +55,7 @@ error: null
 statusCode: 200
 ```
 
-> Understanding [`cheerio`](https://www.npmjs.com/package/cheerio) | Install using `npm install cheerio`
+## Understanding [`cheerio`](https://www.npmjs.com/package/cheerio) | Install using `npm install cheerio`
 
 ```js
 const cheerio = require("cheerio");
