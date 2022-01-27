@@ -128,3 +128,6 @@ Total Recovered :  288,406,934
 ## [ESPN CRIC INFO](https://www.espncricinfo.com/series/ipl-2020-21-1210595/chennai-super-kings-vs-kings-xi-punjab-53rd-match-1216506/ball-by-ball-commentary) | Web Scraping
 
 > Task : `Scrape the data of last ball (18.5) commentary from the website`
+
+![image](https://user-images.githubusercontent.com/28717686/151411446-712f4ab9-36e7-4538-a2af-4d0f328ae81a.png)
+
