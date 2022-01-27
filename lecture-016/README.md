@@ -165,7 +165,7 @@ function handleHtml(html) {
 
 > Run
 
-```bash
+```text
 $ node EspnCricInfo/lbc.js
 misfield at cover and that is it for both teams this season. Full and just outside off, driven hurredly into the co
 vers and it's past the dive
