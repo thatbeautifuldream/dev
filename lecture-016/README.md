@@ -68,6 +68,10 @@ $.html();
 //=> <html><head></head><body><h2 class="title welcome">Hello there!</h2></body></html>
 ```
 
+> Analysing the classes using Inspect element
+
+![image](https://user-images.githubusercontent.com/28717686/151407819-308cf000-38a4-4bf7-8b86-a84ecf118a8d.png)
+
 > Grabbing the HTML
 
 ```js
