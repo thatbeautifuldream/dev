@@ -47,7 +47,7 @@ request(
 );
 ```
 
-> Example from our code
+> Run
 
 ```bash
 $ node request.js
