@@ -163,8 +163,9 @@ function handleHtml(html) {
 }
 ```
 
-![image](https://user-images.githubusercontent.com/28717686/151416093-7ddb6c1e-a293-4ad6-ac12-8d91928004a2.png)
+> Analyse the selector classes
 
+![image](https://user-images.githubusercontent.com/28717686/151416093-7ddb6c1e-a293-4ad6-ac12-8d91928004a2.png)
 
 > Run
 
@@ -173,3 +174,5 @@ $ node EspnCricInfo/lbc.js
 misfield at cover and that is it for both teams this season. Full and just outside off, driven hurredly into the co
 vers and it's past the dive
 ```
+
+## Home Work : [`NodeJs Challenge 📽️`](https://www.youtube.com/watch?v=8AM2S94SBSY&list=PL-Jc9J83PIiEeD3I4VXETPDmzJ3Z1rWb4&index=7)
