@@ -121,7 +121,6 @@ Total Deaths :  5,648,937
 Total Recovered :  288,406,934
 ```
 
-> Using the `Ctrl + F` in Inspect window and use the inspect array for same class elements
+> Using the `Ctrl + F` in Inspect window and use the inspect array for same class elements to browse the HTML
 
 ![image](https://user-images.githubusercontent.com/28717686/151408140-a711c8d2-804e-47a9-81b9-6a1c99c897ca.png)
-

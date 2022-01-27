@@ -16,12 +16,15 @@ function cb(error, response, html) {
 
 function handleHtml(html) {
   let setTool = cheerio.load(html);
-  let contentArr = setTool(".maincounter-number span");
+  let contentArr = setTool(".maincounter-number span"); // inspect the html to find the content (store in array)
+
+  // loop through the array and print the content
   //   for (let i = 0; i < contentArr.length; i++) {
   //     let data = setTool(contentArr[i]).text();
   //     console.log(data);
   //   }
 
+  // individually access the content
   let totalCases = setTool(contentArr[0]).text();
   let totalDeaths = setTool(contentArr[1]).text();
   let totalRecovered = setTool(contentArr[2]).text();
