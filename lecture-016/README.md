@@ -152,6 +152,8 @@ function cb(error, response, html) {
 
 // Task : Scrape the data of last ball (18.5) commentary from the website
 
+![image](https://user-images.githubusercontent.com/28717686/151415863-978d5206-a5ec-4695-97bf-7c29597bb88f.png)
+
 function handleHtml(html) {
   let $ = cheerio.load(html);
   // target last ball commentary
