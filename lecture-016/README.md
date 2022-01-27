@@ -22,7 +22,17 @@ request(
 node ./request.js
 ```
 
-> Status Code `200: OK`
+> [Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) `200: OK`
+
+```text
+Informational responses (100–199)
+Successful responses (200–299)
+Redirection messages (300–399)
+Client error responses (400–499)
+Server error responses (500–599)
+```
+
+> Example from our code
 
 ```bash
 $ node request.js
