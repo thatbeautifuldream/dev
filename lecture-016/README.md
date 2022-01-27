@@ -2,7 +2,7 @@
 
 > Website to scrape: [worldometers.info/coronavirus](https://www.worldometers.info/coronavirus/)
 
-## Undestanding the [Request Module](https://www.npmjs.com/package/request)
+## Undestanding the [`Request Module`](https://www.npmjs.com/package/request)
 
 ```js
 const request = require("request");
