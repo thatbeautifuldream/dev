@@ -1,10 +1,3 @@
-# Lecture 16 | Web Scraping
-
-> Website to scrape: [worldometers.info/coronavirus](https://www.worldometers.info/coronavirus/)
-
-## Undestanding the [Request Module](https://www.npmjs.com/package/request)
-
-```js
 const request = require("request");
 request(
   "https://www.worldometers.info/coronavirus/",
@@ -14,10 +7,3 @@ request(
     console.log("body:", body); // Print the HTML for the Google homepage.
   }
 );
-```
-
-> Run
-
-```bash
-node ./request.js
-```
