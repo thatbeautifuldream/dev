@@ -8,7 +8,7 @@
 
 ## Map function | `map()`
 
-> Example : to illustrate the concept of higher-order function map()
+> Example to illustrate the concept of `higher-order function : map()`
 
 ```javascript
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
