@@ -2,6 +2,6 @@
 
 ## AGENDA : Higher Order Functions | `map` , `filter` , `reduce`
 
-> A higher order function is a function that takes a function as an argument.
-> Few other functions : `find`, `findIndex`, `forEach`, `some` and `every`.
-> Arrow functions are also higher-order functions.
+> 1. A higher order function is a function that takes a function as an argument.
+> 1. Few other functions : `find`, `findIndex`, `forEach`, `some` and `every`.
+> 1. Arrow functions are also higher-order functions.
