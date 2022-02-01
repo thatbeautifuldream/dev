@@ -45,6 +45,9 @@ console.log(lastNames);
 
 const transactions = [1000, 3000, 4000, 2000, -896, 3800, -4500];
 const dollarToRupee = 74.5;
+const rupeeToDollar = 1 / 74.5;
 
 let rupee = transactions.map((x) => x * dollarToRupee);
+let dollar = transactions.map((x) => x * rupeeToDollar);
 console.log(rupee);
+console.log(dollar);

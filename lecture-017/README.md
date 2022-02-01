@@ -156,14 +156,17 @@ $ node lecture-017/map.js
 [ 'Mishra', 'Kumar', 'Kumar', 'Mishra' ]
 ```
 
-## Task to convert `Dollar to Rupees`
+## Task to convert `Dollar to Rupees` using `map()` and vice-versa
 
 ```js
 const transactions = [1000, 3000, 4000, 2000, -896, 3800, -4500];
-const dollarToRupee = 74.5; // 1 dollar = 74.5 rupees
+const dollarToRupee = 74.5;
+const rupeeToDollar = 1 / 74.5;
 
 let rupee = transactions.map((x) => x * dollarToRupee);
+let dollar = transactions.map((x) => x * rupeeToDollar);
 console.log(rupee);
+console.log(dollar);
 ```
 
 > Output :
@@ -175,5 +178,14 @@ $ node lecture-017/map.js
    298000, 149000,
    -66752, 283100,
   -335250
+]
+[
+  13.422818791946309,
+  40.26845637583892,
+  53.691275167785236,
+  26.845637583892618,
+  -12.026845637583893,
+  51.00671140939597,
+  -60.402684563758385
 ]
 ```
