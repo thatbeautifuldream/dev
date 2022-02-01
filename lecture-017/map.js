@@ -14,3 +14,9 @@ function squarer(x) {
 
 let squared = arr.map(squarer);
 console.log(squared);
+
+// map() takes a callback function as an argument
+// map() is an array function that expects a callback function as an argument
+// map() will return a new array with the results of the callback function for each element in the original array
+
+let cubed = arr.map((x) => x * x * x);
