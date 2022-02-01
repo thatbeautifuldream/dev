@@ -114,6 +114,8 @@ $ node lecture-017/splitJoin.js
 - join() takes an array and joins the elements into a string
 - it takes an optional separator argument which is used to separate the elements of the array
 
+> Example :
+
 ```js
 let joinedStr = parts.join("c"); // "pepcoder"
 let joinedStr2 = parts2.join(" "); // "Hello World"
@@ -121,6 +123,8 @@ let joinedStr2 = parts2.join(" "); // "Hello World"
 console.log(joinedStr);
 console.log(joinedStr2);
 ```
+
+> Output :
 
 ```bash
 $ node lecture-017/splitJoin.js
