@@ -61,3 +61,18 @@ $ node lecture-017/map.js
 - map() is a polyfill for `Array.prototype.map()`
 - map() `does not tamper the original array`
 - map() `returns a new array`
+
+> Quick Task : Use map() to create a new array of strings of the names
+
+```js
+let names = ["John", "Mary", "Mike", "Suzy"];
+let nameStrings = names.map((x) => x.toString());
+console.log(nameStrings);
+```
+
+> Output :
+
+```bash
+$ node lecture-017/map.js
+[ 'John', 'Mary', 'Mike', 'Suzy' ]
+```

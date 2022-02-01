@@ -21,3 +21,9 @@ console.log(squared);
 
 let cubed = arr.map((x) => x * x * x);
 console.log(cubed);
+
+// Question : Use map() to create a new array of strings of the names
+
+let names = ["John", "Mary", "Mike", "Suzy"];
+let nameStrings = names.map((x) => x.toString());
+console.log(nameStrings);
