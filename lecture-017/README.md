@@ -305,12 +305,12 @@ $ node lecture-017/filterMapChain.js
 
 ## Find Function | `find()` method
 
--The find() method returns the value of the first element in the array that satisfies the provided testing function.
--Otherwise undefined is returned.
--find() expects a callback function as its argument
--The callback function is called for each element of the array, and the element is passed as the first argument to the callback function.
--The callback function should return a boolean value.
--If the callback function returns true, find() returns the value of the element. Otherwise, it returns undefined.
+- The find() method returns the value of the first element in the array that satisfies the provided testing function.
+- Otherwise undefined is returned.
+- find() expects a callback function as its argument
+- The callback function is called for each element of the array, and the element is passed as the first argument to the callback function.
+- The callback function should return a boolean value.
+- If the callback function returns true, find() returns the value of the element. Otherwise, it returns undefined.
 
 ```js
 let arr = [-1, -2, -3, -4, -5, -6, -7, -8, -9, 10];
