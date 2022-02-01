@@ -113,6 +113,7 @@ $ node lecture-017/splitJoin.js
 - join function reverses the process of split()
 - join() takes an array and joins the elements into a string
 - it takes an optional separator argument which is used to separate the elements of the array
+- if the separator is not specified, the array elements are `separated by commas`
 
 > Example :
 
@@ -132,4 +133,25 @@ $ node lecture-017/splitJoin.js
 [ 'Hello', 'World' ]
 pepcoder
 Hello World
+```
+
+## Task using `map()` and `split()`
+
+> Use map to take out firstname and lastname from the nameArr and store it in a new array.
+
+```js
+let nameArr = ["Milind Mishra", "Rajesh Kumar", "Raju Kumar", "Madan Mishra"];
+
+let firstNames = nameArr.map((x) => x.split(" ")[0]);
+let lastNames = nameArr.map((x) => x.split(" ")[1]);
+console.log(firstNames);
+console.log(lastNames);
+```
+
+> Output :
+
+```bash
+$ node lecture-017/map.js
+[ 'Milind', 'Rajesh', 'Raju', 'Madan' ]
+[ 'Mishra', 'Kumar', 'Kumar', 'Mishra' ]
 ```

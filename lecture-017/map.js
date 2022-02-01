@@ -29,3 +29,14 @@ let nameStrings = names.map(function (x) {
   return x;
 });
 console.log(nameStrings);
+
+// Task
+
+let nameArr = ["Milind Mishra", "Rajesh Kumar", "Raju Kumar", "Madan Mishra"];
+
+// use map to take out firstname and lastname
+
+let firstNames = nameArr.map((x) => x.split(" ")[0]);
+let lastNames = nameArr.map((x) => x.split(" ")[1]);
+console.log(firstNames);
+console.log(lastNames);
