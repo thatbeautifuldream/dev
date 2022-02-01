@@ -110,3 +110,22 @@ $ node lecture-017/splitJoin.js
 
 ## Join function | `join()`
 
+- join function reverses the process of split()
+- join() takes an array and joins the elements into a string
+- it takes an optional separator argument which is used to separate the elements of the array
+
+```js
+let joinedStr = parts.join("c"); // "pepcoder"
+let joinedStr2 = parts2.join(" "); // "Hello World"
+
+console.log(joinedStr);
+console.log(joinedStr2);
+```
+
+```bash
+$ node lecture-017/splitJoin.js
+[ 'pep', 'oder' ]
+[ 'Hello', 'World' ]
+pepcoder
+Hello World
+```
