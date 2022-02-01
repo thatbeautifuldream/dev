@@ -40,3 +40,11 @@ let firstNames = nameArr.map((x) => x.split(" ")[0]);
 let lastNames = nameArr.map((x) => x.split(" ")[1]);
 console.log(firstNames);
 console.log(lastNames);
+
+// dollar to rupee conversion
+
+const transactions = [1000, 3000, 4000, 2000, -896, 3800, -4500];
+const dollarToRupee = 74.5;
+
+let rupee = transactions.map((x) => x * dollarToRupee);
+console.log(rupee);

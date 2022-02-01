@@ -137,7 +137,7 @@ Hello World
 
 ## Task using `map()` and `split()`
 
-> Use map to take out firstname and lastname from the nameArr and store it in a new array.
+> Use map to take out first name and last name from the nameArr and store it in a new array.
 
 ```js
 let nameArr = ["Milind Mishra", "Rajesh Kumar", "Raju Kumar", "Madan Mishra"];
@@ -154,4 +154,26 @@ console.log(lastNames);
 $ node lecture-017/map.js
 [ 'Milind', 'Rajesh', 'Raju', 'Madan' ]
 [ 'Mishra', 'Kumar', 'Kumar', 'Mishra' ]
+```
+
+## Task to convert `Dollar to Rupees`
+
+```js
+const transactions = [1000, 3000, 4000, 2000, -896, 3800, -4500];
+const dollarToRupee = 74.5; // 1 dollar = 74.5 rupees
+
+let rupee = transactions.map((x) => x * dollarToRupee);
+console.log(rupee);
+```
+
+> Output :
+
+```bash
+$ node lecture-017/map.js
+[
+    74500, 223500,
+   298000, 149000,
+   -66752, 283100,
+  -335250
+]
 ```
