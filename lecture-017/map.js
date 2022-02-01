@@ -25,5 +25,7 @@ console.log(cubed);
 // Question : Use map() to create a new array of strings of the names
 
 let names = ["John", "Mary", "Mike", "Suzy"];
-let nameStrings = names.map((x) => x.toString());
+let nameStrings = names.map(function (x) {
+  return x;
+});
 console.log(nameStrings);

@@ -66,7 +66,9 @@ $ node lecture-017/map.js
 
 ```js
 let names = ["John", "Mary", "Mike", "Suzy"];
-let nameStrings = names.map((x) => x.toString());
+let nameStrings = names.map(function (x) {
+  return x;
+});
 console.log(nameStrings);
 ```
 
