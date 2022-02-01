@@ -20,3 +20,4 @@ console.log(squared);
 // map() will return a new array with the results of the callback function for each element in the original array
 
 let cubed = arr.map((x) => x * x * x);
+console.log(cubed);
