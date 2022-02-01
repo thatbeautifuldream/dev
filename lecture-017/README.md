@@ -262,7 +262,20 @@ let femaleAge = allFemales.map(function (female) {
 console.log(femaleAge);
 ```
 
-- Using chaining 
+> Output :
+
+```bash
+$ node lecture-017/filterMapChain.js
+[
+  { name: 'C', age: 24, gender: 'F' },
+  { name: 'D', age: 44, gender: 'F' },
+  { name: 'I', age: 28, gender: 'F' },
+  { name: 'H', age: 47, gender: 'F' }
+]
+[ 24, 44, 28, 47 ]
+```
+
+- Using chaining
 
 ```js
 // Chaining the filter() and map() together!
@@ -281,4 +294,11 @@ let ageOfAllFemales = arr
   });
 
 console.log(ageOfAllFemales);
+```
+
+> Output :
+
+```bash
+$ node lecture-017/filterMapChain.js
+[ 24, 44, 28, 47 ]
 ```
