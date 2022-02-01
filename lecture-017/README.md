@@ -56,3 +56,6 @@ $ node lecture-017/map.js
 ```
 
 - When we write a self defined higher-order function, we call it as `polyfill`.
+- map() is a polyfill for `Array.prototype.map()`
+- map() `does not tamper the original array`
+- map() `returns a new array`
