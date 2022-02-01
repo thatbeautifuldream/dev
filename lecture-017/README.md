@@ -62,7 +62,7 @@ $ node lecture-017/map.js
 - map() `does not tamper the original array`
 - map() `returns a new array`
 
-> Quick Task : Use map() to create a new array of strings of the names
+> :boom: Quick Task : Use map() to create a new array of strings of the names
 
 ```js
 let names = ["John", "Mary", "Mike", "Suzy"];
