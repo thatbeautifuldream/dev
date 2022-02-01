@@ -333,6 +333,8 @@ console.log(firstPositive); // 10
 - The callback function should return a boolean value.
 - If the callback function returns true, some() returns true. Otherwise, it returns false.
 
+> Example code :
+
 ```js
 let arr = [-1, -2, -3, -4, -5, -6, -7, -8, -9, 10];
 
@@ -344,3 +346,19 @@ console.log(firstPositive); // true
 ```
 
 - if even one value `satisfies the condition`, it returns `true`
+- it returs true of one or more than one value satisfies the condition
+
+## Every Function | `every()` method
+
+- every() method checks if all elements in an array pass a test.
+- it returns true if all elements pass the test, otherwise it returns false.
+
+```js
+let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let allPositive = a.every(function (x) {
+  return x > 0;
+});
+console.log(allPositive); // true
+```
+
+> Next class : reduce(), forEach(), findIndex() custom polyfills implementations : map(), filter(), forEach()
