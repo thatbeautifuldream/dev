@@ -78,3 +78,35 @@ console.log(nameStrings);
 $ node lecture-017/map.js
 [ 'John', 'Mary', 'Mike', 'Suzy' ]
 ```
+
+## Split function | `split()`
+
+- `split()` is a string method that splits a string into an array of substrings based on the delimiter.
+- split() splits a string into an array of substrings based on the separator string you provide as an argument.
+- The separator string can be a character, a string, or a regular expression.
+- If the separator is not specified, the string is split on every character.
+- If the separator is an empty string (""), the string is split on every character.
+
+> Examples :
+
+```js
+let str = "pepcoder";
+let parts = str.split("c");
+
+let str2 = "Hello World";
+let parts2 = str2.split(" ");
+
+console.log(parts);
+console.log(parts2);
+```
+
+> Output :
+
+```bash
+$ node lecture-017/splitJoin.js
+[ 'pep', 'oder' ]
+[ 'Hello', 'World' ]
+```
+
+## Join function | `join()`
+
