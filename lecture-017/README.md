@@ -1,6 +1,6 @@
 # Theory Class | JavaScript Interviews
 
-## AGENDA : Higher Order Functions | `map` , `filter` , `reduce`
+## :octocat: AGENDA : Higher Order Functions | `map` , `filter` , `reduce`
 
 > 1. A higher order function is a function that takes a function as an argument.
 > 1. Few other functions : `find`, `findIndex`, `forEach`, `some` and `every`.
