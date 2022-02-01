@@ -208,7 +208,7 @@ console.log(evenNumbers);
 
 - whenever `filter()` spots a `true` value in the callback function, it will add that element to the new array.
 - filter() works in boolean values.
-- filter() will return a new array with the elements that pass the test, it does not modify the original array.
+- filter() will return a new array with the elements that pass the specified test, it does not modify the original array.
 
 > Task : to filter out all profit transactions from the transactions array
 
