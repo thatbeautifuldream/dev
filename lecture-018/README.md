@@ -52,9 +52,6 @@ https://www.espncricinfo.com/series/ipl-2020-21-1210595/match-results
 
 ![image](https://user-images.githubusercontent.com/28717686/152388695-87532d94-e7e3-49b6-ac4c-649546b9d935.png)
 
-
-
 > Scorecard `anchor`
 
 ![image](https://user-images.githubusercontent.com/28717686/152393627-061ae12e-23f4-4736-81d8-cf31b1a98a01.png)
-
