@@ -58,3 +58,6 @@ https://www.espncricinfo.com/series/ipl-2020-21-1210595/match-results
 
 ![image](https://user-images.githubusercontent.com/28717686/152393627-061ae12e-23f4-4736-81d8-cf31b1a98a01.png)
 
+> Scorecard `a[data-hover = "Scorecard"]` array
+
+![image](https://user-images.githubusercontent.com/28717686/152394190-f46b9c36-8ad2-4005-8600-07852ca67fda.png)
