@@ -130,3 +130,7 @@ you get the idea right ?
 .
 .
 ```
+
+## The `scorecard` page is a `table` with `tr` and `td`
+
+> The idea :
