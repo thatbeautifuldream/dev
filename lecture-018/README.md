@@ -194,3 +194,6 @@ https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chenna
 ![image](https://user-images.githubusercontent.com/28717686/152399593-11776f7b-8fa3-4a92-867f-920b1063bd2f.png)
 
 > idea for the task was to use `split()` on the `string` and then use a for loop to iterate through the array
+
+![image](https://user-images.githubusercontent.com/28717686/152401838-82f2a401-7562-4990-94c9-8a373c5d9bc3.png)
+
