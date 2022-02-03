@@ -10,6 +10,8 @@
 - Inside the `espn-scraping` folder, `npm init -y` : it will create a `package.json` file
 - `npm i cheerio request` in the folder
 
+![image](https://user-images.githubusercontent.com/28717686/152388695-87532d94-e7e3-49b6-ac4c-649546b9d935.png)
+
 > Code to scrape the data from the website
 
 ```js
