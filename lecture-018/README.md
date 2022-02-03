@@ -197,3 +197,41 @@ https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chenna
 
 ![image](https://user-images.githubusercontent.com/28717686/152401838-82f2a401-7562-4990-94c9-8a373c5d9bc3.png)
 
+```js
+// idea for the task was to use split() on the string and then use a for loop to iterate through the array
+
+const url =
+  "https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chennai-super-kings-1st-match-1216492/full-scorecard";
+
+const cheerio = require("cheerio");
+const request = require("request");
+
+request(url, cb);
+
+function cb(error, response, html) {
+  if (error) {
+    console.error(error);
+  } else {
+    extractMatchDetails(html);
+  }
+}
+
+function extractMatchDetails(html) {
+  const $ = cheerio.load(html);
+  let div = $(".header-info .description").text();
+  let arr = div.split(",");
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+```
+
+> Output :
+
+```bash
+$ node scorecard.js
+1st Match (N)
+ Abu Dhabi
+ Sep 19 2020
+ Indian Premier League
+```
