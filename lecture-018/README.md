@@ -134,3 +134,6 @@ you get the idea right ?
 ## The `scorecard` page is a `table` with `tr` and `td`
 
 > The idea :
+
+![image](https://user-images.githubusercontent.com/28717686/152398266-152a479d-66ee-49f4-b2a3-581e0cc8ad44.png)
+
