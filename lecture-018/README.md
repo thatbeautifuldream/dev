@@ -272,7 +272,7 @@ function extractMatchDetails(html) {
 ```
 
 ```bash
-$ node scorecard.js 
+$ node scorecard.js
 Abu Dhabi
 Sep 19 2020
 Indian Premier League
@@ -282,3 +282,43 @@ Indian Premier League
 
 ![image](https://user-images.githubusercontent.com/28717686/152403815-f65e7826-44c5-4fad-a637-64a7e96077a8.png)
 
+```js
+// idea for the task was to use split() on the string and then use a for loop to iterate through the array
+
+const url =
+  "https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chennai-super-kings-1st-match-1216492/full-scorecard";
+
+const cheerio = require("cheerio");
+const request = require("request");
+
+request(url, cb);
+
+function cb(error, response, html) {
+  if (error) {
+    console.error(error);
+  } else {
+    extractMatchDetails(html);
+  }
+}
+
+function extractMatchDetails(html) {
+  const $ = cheerio.load(html);
+  let descString = $(".header-info .description").text();
+  let descStringArr = descString.split(",");
+  // console.log(descStringArr);
+  let venue = descStringArr[1].trim(); // using trim() to remove the white space is a good practice
+  let date = descStringArr[2].trim();
+  let matchType = descStringArr[3].trim();
+  let results = $(".event .status-text span").text();
+  console.log(`Match Details: ${venue}, ${date}, ${matchType}`);
+  console.log(`Match Results: ${results}`);
+}
+```
+
+> Output :
+
+```bash
+$ node scorecard.js
+Match Details: Abu Dhabi, Sep 19 2020, Indian Premier League
+Match Results: Super Kings won by 5 wickets (with 4 balls remaining)
+```
