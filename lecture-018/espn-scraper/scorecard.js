@@ -18,9 +18,7 @@ function cb(error, response, html) {
 
 function extractMatchDetails(html) {
   const $ = cheerio.load(html);
-  let div = $(".header-info .description").text();
-  let arr = div.split(",");
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-  }
+  let descString = $(".header-info .description").text();
+  let descStringArr = descString.split(",");
+  console.log(descStringArr);
 }

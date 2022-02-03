@@ -218,11 +218,9 @@ function cb(error, response, html) {
 
 function extractMatchDetails(html) {
   const $ = cheerio.load(html);
-  let div = $(".header-info .description").text();
-  let arr = div.split(",");
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-  }
+  let descString = $(".header-info .description").text();
+  let descStringArr = descString.split(",");
+  console.log(descStringArr);
 }
 ```
 
@@ -230,8 +228,10 @@ function extractMatchDetails(html) {
 
 ```bash
 $ node scorecard.js
-1st Match (N)
- Abu Dhabi
- Sep 19 2020
- Indian Premier League
+[
+  '1st Match (N)',
+  ' Abu Dhabi',
+  ' Sep 19 2020',
+  ' Indian Premier League'
+]
 ```
