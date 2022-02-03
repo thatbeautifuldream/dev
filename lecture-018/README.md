@@ -236,7 +236,7 @@ $ node scorecard.js
 ]
 ```
 
-> Improvement :
+> Improvement : Added `venue`, `date` and `series name` to the output
 
 ```js
 // idea for the task was to use split() on the string and then use a for loop to iterate through the array
