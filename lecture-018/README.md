@@ -2,7 +2,7 @@
 
 ## :exclamation: ESPN Web Scraping Project
 
-> [ESPN Cricinfo](https://www.espncricinfo.com/series/ipl-2020-21-1210595)
+> [ESPN Cricinfo | https://www.espncricinfo.com/series/ipl-2020-21-1210595](https://www.espncricinfo.com/series/ipl-2020-21-1210595)
 
 ## Setup the folder structure
 
@@ -10,10 +10,11 @@
 - Inside the `espn-scraping` folder, `npm init -y` : it will create a `package.json` file
 - `npm i cheerio request` in the folder
 
-> The actual anchor tag to the `scoreboard`
+> The actual **anchor** tag to the `scoreboard`
+
 ![image](https://user-images.githubusercontent.com/28717686/152389641-042f659f-9878-46a5-954b-ad1047d568f0.png)
 
-> Code to scrape the data from the website
+> Code to _scrape the data_ from the website
 
 ```js
 const url = "https://www.espncricinfo.com/series/ipl-2020-21-1210595";
@@ -50,4 +51,3 @@ https://www.espncricinfo.com/series/ipl-2020-21-1210595/match-results
 > The extracted `scoreboard`
 
 ![image](https://user-images.githubusercontent.com/28717686/152388695-87532d94-e7e3-49b6-ac4c-649546b9d935.png)
-
