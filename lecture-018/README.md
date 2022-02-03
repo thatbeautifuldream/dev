@@ -192,3 +192,5 @@ https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chenna
 > Task : Scrape following `data` from the `scorecard` page
 
 ![image](https://user-images.githubusercontent.com/28717686/152399593-11776f7b-8fa3-4a92-867f-920b1063bd2f.png)
+
+> idea for the task was to use `split()` on the `string` and then use a for loop to iterate through the array
