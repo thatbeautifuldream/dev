@@ -324,3 +324,5 @@ $ node scorecard.js
 Match Details: Abu Dhabi, Sep 19 2020, Indian Premier League
 Match Results: Super Kings won by 5 wickets (with 4 balls remaining)
 ```
+
+> Next Class : Retrive Team Name, get batsman details and repeat the process for all the matches, and explore the excel module to create a spreadsheet with the data
