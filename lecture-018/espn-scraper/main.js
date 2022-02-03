@@ -22,3 +22,21 @@ function extractLink(html) {
 
   getAllMatchLink(fullLink);
 }
+
+function getAllMatchLink(uri) {
+  request(uri, function (err, response, html) {
+    if (err) {
+      console.error(err);
+    } else {
+      extractAllLink(html); // all scorecard link
+    }
+  });
+}
+
+function extractAllLink(html) {
+  const $ = cheerio.load(html);
+  let anchorElement = $("a[data-hover = 'View Scorecard']");
+  let link = anchorElement.attr("href");
+  let fullLink = "https://www.espncricinfo.com" + link; // view all results
+  console.log(fullLink);
+}
