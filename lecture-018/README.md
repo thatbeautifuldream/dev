@@ -189,3 +189,7 @@ https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chenna
 
 ![image](https://user-images.githubusercontent.com/28717686/152398266-152a479d-66ee-49f4-b2a3-581e0cc8ad44.png)
 
+> Data
+
+![image](https://user-images.githubusercontent.com/28717686/152399593-11776f7b-8fa3-4a92-867f-920b1063bd2f.png)
+
