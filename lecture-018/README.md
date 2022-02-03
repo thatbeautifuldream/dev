@@ -3,3 +3,43 @@
 ## :exclamation: ESPN Web Scraping Project
 
 > [ESPN Cricinfo](https://www.espncricinfo.com/series/ipl-2020-21-1210595)
+
+## Setup the folder structure
+
+- Make a folder named `espn-scraping`
+- Inside the `espn-scraping` folder, `npm init -y` : it will create a `package.json` file
+- `npm i cheerio request` in the folder
+
+> Code to scrape the data from the website
+
+```js
+const url = "https://www.espncricinfo.com/series/ipl-2020-21-1210595";
+const cheerio = require("cheerio");
+const request = require("request");
+
+request(url, cb);
+
+// cb is a callback function for request
+function cb(err, response, html) {
+  if (err) {
+    console.error(err);
+  } else {
+    extractLink(html);
+  }
+}
+
+function extractLink(html) {
+  const $ = cheerio.load(html);
+  let anchorElement = $("a[data-hover = 'View All Results']");
+  let link = anchorElement.attr("href");
+  let fullLink = "https://www.espncricinfo.com" + link;
+  console.log(fullLink);
+}
+```
+
+> Output :
+
+```bash
+$ node main.js
+https://www.espncricinfo.com/series/ipl-2020-21-1210595/match-results
+```
