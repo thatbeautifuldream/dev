@@ -282,6 +282,8 @@ Indian Premier League
 
 ![image](https://user-images.githubusercontent.com/28717686/152403815-f65e7826-44c5-4fad-a637-64a7e96077a8.png)
 
+- `Note` : To select the desired class use parent class and then child class (desendent)
+
 ```js
 // idea for the task was to use split() on the string and then use a for loop to iterate through the array
 

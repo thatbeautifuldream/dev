@@ -16,6 +16,8 @@ function cb(error, response, html) {
   }
 }
 
+// note : to select the desired class use parent class and then child class (desendent)
+
 function extractMatchDetails(html) {
   const $ = cheerio.load(html);
   let descString = $(".header-info .description").text();
