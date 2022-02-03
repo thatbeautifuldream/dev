@@ -55,8 +55,6 @@ https://www.espncricinfo.com/series/ipl-2020-21-1210595/match-results
 > Scorecard `anchor`
 
 ![image](https://user-images.githubusercontent.com/28717686/152393627-061ae12e-23f4-4736-81d8-cf31b1a98a01.png)
-<<<<<<< HEAD
-=======
 
 > Scorecard `a[data-hover = "Scorecard"]` array
 
