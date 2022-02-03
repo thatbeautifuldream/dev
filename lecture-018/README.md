@@ -14,7 +14,7 @@
 
 ![image](https://user-images.githubusercontent.com/28717686/152389641-042f659f-9878-46a5-954b-ad1047d568f0.png)
 
-> Code to _scrape the data_ from the website
+> Code to _scrape the data_ from the website (view all results)
 
 ```js
 const url = "https://www.espncricinfo.com/series/ipl-2020-21-1210595";
@@ -48,6 +48,6 @@ $ node main.js
 https://www.espncricinfo.com/series/ipl-2020-21-1210595/match-results
 ```
 
-> The extracted `scoreboard`
+> The extracted `view all results` link
 
 ![image](https://user-images.githubusercontent.com/28717686/152388695-87532d94-e7e3-49b6-ac4c-649546b9d935.png)

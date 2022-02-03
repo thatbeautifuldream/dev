@@ -17,6 +17,8 @@ function extractLink(html) {
   const $ = cheerio.load(html);
   let anchorElement = $("a[data-hover = 'View All Results']");
   let link = anchorElement.attr("href");
-  let fullLink = "https://www.espncricinfo.com" + link;
+  let fullLink = "https://www.espncricinfo.com" + link; // view all results
   console.log(fullLink);
+
+  getAllMatchLink(fullLink);
 }
