@@ -35,8 +35,10 @@ function getAllMatchLink(uri) {
 
 function extractAllLink(html) {
   const $ = cheerio.load(html);
-  let anchorElement = $("a[data-hover = 'View Scorecard']");
-  let link = anchorElement.attr("href");
-  let fullLink = "https://www.espncricinfo.com" + link; // view all results
-  console.log(fullLink);
+  let scoreCardArr = $('a[data-hover = "Scorecard"]');
+  for (let i = 0; i < scoreCardArr.length; i++) {
+    let link = scoreCardArr[i].attribs.href;
+    let fullLink = "https://www.espncricinfo.com" + link;
+    console.log(fullLink);
+  }
 }
