@@ -20,5 +20,11 @@ function extractMatchDetails(html) {
   const $ = cheerio.load(html);
   let descString = $(".header-info .description").text();
   let descStringArr = descString.split(",");
-  console.log(descStringArr);
+  // console.log(descStringArr);
+  let venue = descStringArr[1].trim(); // using trim() to remove the white space is a good practice
+  let date = descStringArr[2].trim();
+  let matchType = descStringArr[3].trim();
+  console.log(venue);
+  console.log(date);
+  console.log(matchType);
 }
