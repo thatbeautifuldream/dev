@@ -41,7 +41,7 @@ let p2 = person.age; // p2 is a number
 let p3 = person.address; // p3 is undefined
 
 console.log(`${p1} is ${p2} years old from ${p3}`);
-// Adam is 30 years old from undefined
+// Adam is null years old from undefined
 ```
 
 > Output : `undefined`

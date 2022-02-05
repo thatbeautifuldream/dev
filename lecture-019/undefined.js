@@ -33,3 +33,7 @@ console.log(`${p1} is ${p2} years old from ${p3}`);
 
 // whenever we dont assign value to a variable, it is undefined
 // null is passed as a value explicitly
+
+// Null vs undefined
+// Null is a value that is explicitly assigned
+// undefined is a value that is not assigned
