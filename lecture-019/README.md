@@ -7,7 +7,7 @@
 - [Shallow Copy and Deep Copy from every methord possible](https://youtu.be/nohXAwhw-mY)
 - [Array.isArray() Methord](https://youtu.be/hPNOeEH4X9k)
 
-## Undefined in JavaScript
+## Undefined and Null in JavaScript
 
 ```js
 console.log(a); // but it is undefined, since it is not valued yet
