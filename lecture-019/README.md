@@ -177,3 +177,17 @@ Truthy
 Truthy
 Truthy
 ```
+
+## List of Truthy and Falsy Values in Js
+
+- List of Truthy values in Js
+
+  > 1, true, " ", [], {}, function () {}, new Date(), new Error(), new RegExp()
+  >
+  > 1. Any Number other than 0
+  > 1. Any String other than empty string
+  > 1. New Object
+
+- List of Falsey values in Js
+
+  > 0, false, null, undefined, NaN, Infinity, -Infinity

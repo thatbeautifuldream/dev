@@ -45,3 +45,8 @@ testTruthyFalsy(-Infinity); // Falsy (-Infinity is falsy) -Infinity : -Infinity 
 testTruthyFalsy(new Date()); // Truthy (Date is a type of object)
 testTruthyFalsy(new Error()); // Truthy (Error is a type of object)
 testTruthyFalsy(new RegExp()); // Truthy (RegExp is a type of object)
+
+// List of Truthy values in Js
+// 1, true, "", " ", [], {}, function () {}, new Date(), new Error(), new RegExp()
+// List of Falsey values in Js
+// 0, false, null, undefined, NaN, Infinity, -Infinity
