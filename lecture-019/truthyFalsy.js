@@ -50,3 +50,27 @@ testTruthyFalsy(new RegExp()); // Truthy (RegExp is a type of object)
 // 1, true, "", " ", [], {}, function () {}, new Date(), new Error(), new RegExp()
 // List of Falsey values in Js
 // 0, false, null, undefined, NaN, Infinity, -Infinity
+
+
+
+function homeWork() {
+  if ((-100 && 100 && "0") || [] === true || 0) {
+    log(1);
+    if ([] || (0 && false)) {
+      log(2);
+    }
+    if (Infinity && NaN && "false") {
+      log(3);
+      if ("") {
+        log(4);
+      }
+    } else {
+      log(5);
+      if (({} || false === "") && !(null && undefined)) {
+        log(6);
+      }
+    }
+  }
+}
+
+homeWork();
