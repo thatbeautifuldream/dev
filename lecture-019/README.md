@@ -62,6 +62,7 @@ Adam is null years old from undefined
 // Null vs undefined
 // Null is a value that is explicitly assigned
 // undefined is a value that is not assigned
+const log = console.log;
 
 let formObj = {
   firstName: "Milind",
