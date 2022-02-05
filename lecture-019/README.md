@@ -58,10 +58,12 @@ Adam is null years old from undefined
 
 > Footnotes : whenever we dont assign value to a variable, it is `undefined` whereas `null` is passed as a value explicitly.
 
+## Null vs undefined
+
+- Null is a value that is explicitly assigned
+- undefined is a value that is not assigned
+
 ```js
-// Null vs undefined
-// Null is a value that is explicitly assigned
-// undefined is a value that is not assigned
 const log = console.log;
 
 let formObj = {
@@ -81,3 +83,6 @@ log(formObj.age); // undefined : not assigned
 null
 undefined
 ```
+
+- `Null` explicitly tells that the value is empty
+- `undefined` tells that the value is not assigned

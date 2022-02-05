@@ -48,3 +48,6 @@ let formObj = {
 
 log(formObj.middleName); // null : explicit assignment
 log(formObj.age); // undefined : not assigned
+
+// Null explicitly tells that the value is empty
+// undefined tells that the value is not assigned
