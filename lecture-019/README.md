@@ -193,7 +193,8 @@ Truthy
   > 0, false, null, undefined, NaN, Infinity, -Infinity
 
 ```js
-const log = function homeWork() {
+const log = console.log;
+function homeWork() {
   if ((-100 && 100 && "0") || [] === true || 0) {
     log(1);
     if ([] || (0 && false)) {
@@ -211,7 +212,7 @@ const log = function homeWork() {
       }
     }
   }
-};
+}
 
 homeWork();
 ```
