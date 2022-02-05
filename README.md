@@ -7,3 +7,9 @@ This repository consists of all the code snippets and projects from the pepcodin
 ## Tech Stack
 
 `JavaScript`, `Node.js`
+
+## To Do
+
+- [Javascript course - Hitesh Choudhary](https://www.youtube.com/playlist?list=PLRAV69dS1uWSxUIk5o3vQY2-_VKsOpXLD)
+
+- [Namaste 🙏 JavaScript](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP)
