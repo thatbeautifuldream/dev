@@ -21,7 +21,7 @@ console.log(b); // undefined
 
 let person = {
   name: "Adam",
-  age: 30,
+  age: null,
 };
 
 let p1 = person.name; // p1 is a string

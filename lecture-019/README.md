@@ -33,7 +33,7 @@ console.log(b); // undefined
 
 let person = {
   name: "Adam",
-  age: 30,
+  age: null,
 };
 
 let p1 = person.name; // p1 is a string
@@ -53,7 +53,7 @@ undefined
 undefined
 null
 undefined
-Adam is 30 years old from undefined
+Adam is null years old from undefined
 ```
 
 > Footnotes : whenever we dont assign value to a variable, it is `undefined` whereas `null` is passed as a value explicitly.
