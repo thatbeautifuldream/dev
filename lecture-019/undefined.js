@@ -46,4 +46,5 @@ let formObj = {
   lastName: "Mishra",
 };
 
-log(formObj.middleName); // null
+log(formObj.middleName); // null : explicit assignment
+log(formObj.age); // undefined : not assigned
