@@ -6,3 +6,8 @@ var a = 2; // gets memory location
 var x;
 console.log(x); // undefined
 
+function test() {
+  // returns nothing
+}
+
+console.log(test()); // undefined

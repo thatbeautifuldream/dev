@@ -17,12 +17,21 @@ var a = 2; // gets memory location
 
 var x;
 console.log(x); // undefined
+
+// or
+
+function test() {
+  // returns nothing
+}
+
+console.log(test()); // undefined
 ```
 
 > Output : `undefined`
 
 ```bash
 > node undefined.js
+undefined
 undefined
 undefined
 ```
