@@ -81,3 +81,31 @@ Chennai Super Kings
 - Both teams are in a `h5 container`
 
 ![Screenshot 2022-02-08 at 10 12 43 PM](https://user-images.githubusercontent.com/28717686/153034425-f2059d96-c682-4300-828d-bb43b6a4ad1b.png)
+
+- Based on the teams deciding the opponent, we can use the `h5` container to extract the team name
+
+```js
+// grabbing Mumbai and Chennai stats table
+  let innings = $(".card.content-block.match-scorecard-table .Collapsible");
+  let htmlString = "";
+  for (let i = 0; i < innings.length; i++) {
+    htmlString += $(innings[i]).html();
+    let teamName = $(innings[i]).find("h5").text();
+    teamName = teamName.split("INNINGS")[0].trim();
+    let opponentIndex = i == 0 ? 1 : 0;
+    let opponentName = $(innings[opponentIndex]).find("h5").text();
+    opponentName = opponentName.split("INNINGS")[0].trim();
+
+    console.log(`${teamName} v/s ${opponentName}`);
+  }
+  // console.log(htmlString);
+}
+```
+
+```bash
+> node scorecard.js
+Match Details: Abu Dhabi, Sep 19 2020, Indian Premier League
+Match Results: Super Kings won by 5 wickets (with 4 balls remaining)
+Mumbai Indians v/s Chennai Super Kings
+Chennai Super Kings v/s Mumbai Indians
+```
