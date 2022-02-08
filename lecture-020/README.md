@@ -102,10 +102,67 @@ Chennai Super Kings
 }
 ```
 
+> Output:
+
 ```bash
 > node scorecard.js
 Match Details: Abu Dhabi, Sep 19 2020, Indian Premier League
 Match Results: Super Kings won by 5 wickets (with 4 balls remaining)
 Mumbai Indians v/s Chennai Super Kings
 Chennai Super Kings v/s Mumbai Indians
+```
+
+```js
+
+    let cInning = $(innings[i]);
+
+    let allRows = cInning.find(".table.batsman tbody tr");
+
+    for (let j = 0; j < allRows.length; j++) {
+      let allCols = $(allRows[j]).find("td");
+      let isWorthy = $(allCols[0]).hasClass("batsman-cell");
+
+      if (isWorthy == true) {
+        let playerName = $(allCols[0]).text().trim();
+
+        let runs = $(allCols[2]).text().trim();
+        let balls = $(allCols[3]).text().trim();
+        let fours = $(allCols[5]).text().trim();
+        let sixes = $(allCols[6]).text().trim();
+        let STR = $(allCols[7]).text().trim();
+
+        console.log(
+          `${playerName} | ${runs} |${balls} | ${fours} | ${sixes} | ${STR}`
+        );
+      }
+    }
+
+    console.log(
+      "----------------------------------------------------------------"
+    );
+  }
+}
+```
+
+```bash
+Rohit Sharma (c) | 12 |10 | 2 | 0 | 120.00
+Quinton de Kock † | 33 |20 | 5 | 0 | 165.00
+Suryakumar Yadav | 17 |16 | 2 | 0 | 106.25
+Saurabh Tiwary | 42 |31 | 3 | 1 | 135.48
+Hardik Pandya | 14 |10 | 0 | 2 | 140.00
+Kieron Pollard | 18 |14 | 1 | 1 | 128.57
+Krunal Pandya | 3 |3 | 0 | 0 | 100.00
+James Pattinson | 11 |8 | 2 | 0 | 137.50
+Rahul Chahar | 2 |4 | 0 | 0 | 50.00
+Trent Boult | 0 |1 | 0 | 0 | 0.00
+Jasprit Bumrah | 5 |3 | 0 | 0 | 166.66
+----------------------------------------------------------------
+Murali Vijay | 1 |7 | 0 | 0 | 14.28
+Shane Watson | 4 |5 | 1 | 0 | 80.00
+Faf du Plessis | 58 |44 | 6 | 0 | 131.81
+Ambati Rayudu | 71 |48 | 6 | 3 | 147.91
+Ravindra Jadeja | 10 |5 | 2 | 0 | 200.00
+Sam Curran | 18 |6 | 1 | 2 | 300.00
+MS Dhoni (c)† | 0 |2 | 0 | 0 | 0.00
+----------------------------------------------------------------
 ```
