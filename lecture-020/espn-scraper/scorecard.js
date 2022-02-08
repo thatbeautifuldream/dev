@@ -29,4 +29,12 @@ function extractMatchDetails(html) {
   let results = $(".event .status-text span").text();
   console.log(`Match Details: ${venue}, ${date}, ${matchType}`);
   console.log(`Match Results: ${results}`);
+
+  // grabbing Mumbai and Chennai stats table
+  let innings = $(".card.content-block.match-scorecard-table .Collapsible");
+  let htmlString = "";
+  for (let i = 0; i < innings.length; i++) {
+    htmlString = $(innings[i]).html();
+  }
+  console.log(htmlString);
 }
