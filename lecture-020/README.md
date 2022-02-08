@@ -6,3 +6,16 @@
 ![Screenshot 2022-02-08 at 9 34 20 PM](https://user-images.githubusercontent.com/28717686/153027066-2352ca69-cd87-468d-b641-3b718248cb92.png)
 
 - grabbed the table contents from Mumbai and Chennai stats table as HTML and store in a html file
+
+```js
+// grabbing Mumbai and Chennai stats table
+  let innings = $(".card.content-block.match-scorecard-table .Collapsible");
+  let htmlString = "";
+  for (let i = 0; i < innings.length; i++) {
+    htmlString = $(innings[i]).html();
+  }
+  console.log(htmlString);
+}
+```
+
+- Added a new file to store the HTML data [`innings.html`](./lecture-020/espn-scraper/innings.html)
