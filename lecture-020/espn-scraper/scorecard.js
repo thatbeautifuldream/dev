@@ -73,3 +73,8 @@ function extractMatchDetails(html) {
 
   //console.log(htmlString)
 }
+
+// exporting the function to be used in other files
+module.exports = {
+  ps: processScoreCrad,
+};
