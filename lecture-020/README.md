@@ -19,3 +19,5 @@
 ```
 
 - Added a new file to store the HTML data [`innings.html`](https://thatbeautifuldream.github.io/pepcoding-webdev/lecture-020/espn-scraper/innings.html)
+
+![Screenshot 2022-02-08 at 9 47 42 PM](https://user-images.githubusercontent.com/28717686/153029878-945d1b7b-dfb8-4d3b-85f3-407ba48ce499.png)
