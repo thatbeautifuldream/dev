@@ -12,7 +12,7 @@
   let innings = $(".card.content-block.match-scorecard-table .Collapsible");
   let htmlString = "";
   for (let i = 0; i < innings.length; i++) {
-    htmlString = $(innings[i]).html();
+    htmlString += $(innings[i]).html();
   }
   console.log(htmlString);
 }
