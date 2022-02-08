@@ -35,6 +35,9 @@ function extractMatchDetails(html) {
   let htmlString = "";
   for (let i = 0; i < innings.length; i++) {
     htmlString += $(innings[i]).html();
+    let teamName = $(innings[i]).find("h5").text();
+    teamName = teamName.split("INNINGS")[0].trim();
+    console.log(`${teamName}`);
   }
-  console.log(htmlString);
+  // console.log(htmlString);
 }
