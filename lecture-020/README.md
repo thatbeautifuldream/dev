@@ -18,4 +18,4 @@
 }
 ```
 
-- Added a new file to store the HTML data [`innings.html`](./lecture-020/espn-scraper/innings.html)
+- Added a new file to store the HTML data [`innings.html`](https://thatbeautifuldream.github.io/pepcoding-webdev/lecture-020/espn-scraper/innings.html)
