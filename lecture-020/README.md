@@ -144,6 +144,8 @@ Chennai Super Kings v/s Mumbai Indians
 }
 ```
 
+> Output:
+
 ```bash
 Rohit Sharma (c) | 12 |10 | 2 | 0 | 120.00
 Quinton de Kock † | 33 |20 | 5 | 0 | 165.00
