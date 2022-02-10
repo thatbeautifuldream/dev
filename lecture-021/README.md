@@ -329,4 +329,5 @@ let excelData = wb.Sheets["persons"]; // get the sheet
 let ans = xlsx.utils.sheet_to_json(excelData); // convert the sheet to json
 console.log(ans); // print the json data
 ```
+![Screenshot 2022-02-10 at 10 51 18 PM](https://user-images.githubusercontent.com/28717686/153461813-20fa78e6-366e-43ff-a13a-905b53b3637d.png)
 
