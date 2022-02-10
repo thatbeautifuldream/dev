@@ -1,47 +1,59 @@
-// idea for the task was to use split() on the string and then use a for loop to iterate through the array
+// const url =
+//   "https://www.espncricinfo.com//series/ipl-2020-21-1210595/mumbai-indians-vs-chennai-super-kings-1st-match-1216492/full-scorecard";
 
-const url =
-  "https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chennai-super-kings-1st-match-1216492/full-scorecard";
-
-const cheerio = require("cheerio");
 const request = require("request");
+const cheerio = require("cheerio");
+const path = require("path");
+const fs = require("fs");
+function processScoreCrad(url) {
+  request(url, cb);
+}
 
-request(url, cb);
-
-function cb(error, response, html) {
-  if (error) {
-    console.error(error);
+function cb(err, response, html) {
+  if (err) {
+    console.error(err);
   } else {
     extractMatchDetails(html);
   }
 }
 
-// note : to select the desired class use parent class and then child class (desendent)
-
 function extractMatchDetails(html) {
-  const $ = cheerio.load(html);
-  let descString = $(".header-info .description").text();
-  let descStringArr = descString.split(",");
-  // console.log(descStringArr);
-  let venue = descStringArr[1].trim(); // using trim() to remove the white space is a good practice
-  let date = descStringArr[2].trim();
-  let matchType = descStringArr[3].trim();
-  let results = $(".event .status-text span").text();
-  console.log(`Match Details: ${venue}, ${date}, ${matchType}`);
-  console.log(`Match Results: ${results}`);
+  let $ = cheerio.load(html);
 
-  // grabbing Mumbai and Chennai stats table
-  let innings = $(".card.content-block.match-scorecard-table .Collapsible");
+  let descString = $(".match-header-info.match-info-MATCH .description");
+
+  let descStringArr = descString.text().split(",");
+
+  let venue = descStringArr[1].trim();
+  let date = descStringArr[2].trim();
+
+  let result = $(
+    ".match-info.match-info-MATCH.match-info-MATCH-half-width .status-text span"
+  ).text();
+
+  console.log(venue);
+  console.log(date);
+  console.log(result);
+
+  console.log("```````````````````````````````````````````````````");
+
+  let innings = $(".card.content-block.match-scorecard-table>.Collapsible");
+
+  //console.log(innings)
+
   let htmlString = "";
+
   for (let i = 0; i < innings.length; i++) {
     htmlString += $(innings[i]).html();
+
     let teamName = $(innings[i]).find("h5").text();
     teamName = teamName.split("INNINGS")[0].trim();
     let opponentIndex = i == 0 ? 1 : 0;
+
     let opponentName = $(innings[opponentIndex]).find("h5").text();
     opponentName = opponentName.split("INNINGS")[0].trim();
 
-    // console.log(`${teamName} v/s ${opponentName}`);
+    //console.log(teamName , opponentName);
 
     let cInning = $(innings[i]);
 
@@ -63,18 +75,53 @@ function extractMatchDetails(html) {
         console.log(
           `${playerName} | ${runs} |${balls} | ${fours} | ${sixes} | ${STR}`
         );
+
+        processPlayer(
+          teamName,
+          opponentName,
+          playerName,
+          runs,
+          balls,
+          fours,
+          sixes,
+          STR,
+          venue,
+          date,
+          result
+        );
+        // Template Literal
       }
     }
 
-    console.log(
-      "----------------------------------------------------------------"
-    );
+    console.log("````````````````````````````````````````````````````````");
   }
 
   //console.log(htmlString)
 }
 
-// exporting the function to be used in other files
+function processPlayer(
+  teamName,
+  opponentName,
+  playerName,
+  runs,
+  balls,
+  fours,
+  sixes,
+  STR,
+  venue,
+  date,
+  result
+) {
+  let teamPath = path.join(__dirname, "IPL", teamName);
+  dirCreator(teamPath);
+}
+
+function dirCreator(filePath) {
+  if (fs.existsSync(filePath) == false) {
+    fs.mkdirSync(filePath);
+  }
+}
+
 module.exports = {
   ps: processScoreCrad,
 };

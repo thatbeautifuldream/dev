@@ -329,5 +329,36 @@ let excelData = wb.Sheets["persons"]; // get the sheet
 let ans = xlsx.utils.sheet_to_json(excelData); // convert the sheet to json
 console.log(ans); // print the json data
 ```
+
 ![Screenshot 2022-02-10 at 10 51 18 PM](https://user-images.githubusercontent.com/28717686/153461813-20fa78e6-366e-43ff-a13a-905b53b3637d.png)
+
+## ESPN Scraper and Excel Integration
+
+> Making individual folders with team names fetched from ESPN website using function : `processPlayer()`
+
+```js
+function processPlayer(
+  teamName,
+  opponentName,
+  playerName,
+  runs,
+  balls,
+  fours,
+  sixes,
+  STR,
+  venue,
+  date,
+  result
+) {
+  let teamPath = path.join(__dirname, "IPL", teamName);
+  dirCreator(teamPath);
+}
+
+function dirCreator(filePath) {
+  if (fs.existsSync(filePath) == false) {
+    fs.mkdirSync(filePath);
+  }
+}
+```
+
 
