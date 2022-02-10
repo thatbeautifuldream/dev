@@ -14,7 +14,7 @@
   "age": 23,
   "height": "5'11",
   "weight": "85kgs",
-  "isAvenger": true,
+  "isAvenger": false,
   "isCaptain": false,
   "address": {
     "city": "Bangalore",
