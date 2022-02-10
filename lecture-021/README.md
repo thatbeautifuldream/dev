@@ -264,7 +264,6 @@ log(jsonFile);
 
 - Install xlsx library using `npm install xlsx`
 
-
 ```js
 const log = console.log;
 const fs = require("fs");
@@ -311,9 +310,10 @@ log("File written successfully");
 
 // flow : workbook -> worksheet (convert into rows and cols) expects a JSON data -> excel file
 
+// writing to excel file
+
 let newWB = xlsx.utils.book_new(); // create a new workbook file
 let newWS = xlsx.utils.json_to_sheet(jsonFile); // convert the json data to a worksheet (sheet format)
 xlsx.utils.book_append_sheet(newWB, newWS, "persons"); // append the worksheet to the workbook
 xlsx.writeFile(newWB, "file.xlsx"); // write the workbook to a file
 ```
-
