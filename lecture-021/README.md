@@ -361,5 +361,106 @@ function dirCreator(filePath) {
 }
 ```
 
+> Got all the individual team folders using `dirCreator()` function
+
 ![Screenshot 2022-02-10 at 11 27 38 PM](https://user-images.githubusercontent.com/28717686/153467958-10ff4234-6c70-46f3-b19c-f8b5262f6174.png)
+
+## Excel read and write using function : `excelReader()` & `excelWriter()`
+
+```js
+// writing the excel file
+function excelWriter(file) {
+  let newWB = xlsx.utils.book_new(); // create a new workbook file
+  let newWS = xlsx.utils.json_to_sheet(jsonFile); // convert the json data to a worksheet (sheet format)
+  xlsx.utils.book_append_sheet(newWB, newWS, "persons"); // append the worksheet to the workbook
+  xlsx.writeFile(newWB, "file.xlsx"); // write the workbook to a file
+}
+
+// reading the excel file
+function excelReader(file, sheetName) {
+  if (fs.existsSync(file) == false) {
+    return [];
+  }
+  let wb = xlsx.readFile("./file.xlsx"); // read the file
+  let excelData = wb.Sheets["persons"]; // get the sheet
+  let ans = xlsx.utils.sheet_to_json(excelData); // convert the sheet to json
+  return ans; // return the json data
+}
+```
+
+> Adding individual team data to the excel file using `excelWriter()` function
+
+```js
+
+function processPlayer(
+  teamName,
+  opponentName,
+  playerName,
+  runs,
+  balls,
+  fours,
+  sixes,
+  STR,
+  venue,
+  date,
+  result
+) {
+  let teamPath = path.join(__dirname, "IPL", teamName);
+  dirCreator(teamPath);
+
+  let filePath = path.join(teamPath, playerName + ".xlsx");
+
+  let content = excelReader(filePath, playerName);
+  [];
+
+  let playerObj = {
+    playerName,
+    teamName,
+    opponentName,
+    runs,
+    balls,
+    fours,
+    sixes,
+    STR,
+    venue,
+    date,
+    result,
+  };
+
+  content.push(playerObj);
+
+  excelWriter(filePath, playerName, content);
+}
+
+function dirCreator(folderPath) {
+  if (fs.existsSync(folderPath) == false) {
+    fs.mkdirSync(folderPath);
+  }
+}
+
+function excelWriter(fileName, sheetName, jsonData) {
+  let newWB = xlsx.utils.book_new();
+  // Creating a new WorkBook
+  let newWS = xlsx.utils.json_to_sheet(jsonData);
+  // Json is converted to sheet format (rows and cols)
+  xlsx.utils.book_append_sheet(newWB, newWS, sheetName);
+  xlsx.writeFile(newWB, fileName);
+}
+
+function excelReader(fileName, sheetName) {
+  if (fs.existsSync(fileName) == false) {
+    return [];
+  }
+  let wb = xlsx.readFile(fileName);
+
+  let excelData = wb.Sheets[sheetName];
+  let ans = xlsx.utils.sheet_to_json(excelData);
+  return ans;
+}
+
+module.exports = {
+  ps: processScoreCrad,
+};
+```
+
 
