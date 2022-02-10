@@ -313,7 +313,10 @@ log("File written successfully");
 // writing to excel file
 
 let newWB = xlsx.utils.book_new(); // create a new workbook file
+
 let newWS = xlsx.utils.json_to_sheet(jsonFile); // convert the json data to a worksheet (sheet format)
 xlsx.utils.book_append_sheet(newWB, newWS, "persons"); // append the worksheet to the workbook
 xlsx.writeFile(newWB, "file.xlsx"); // write the workbook to a file
 ```
+
+![Screenshot 2022-02-10 at 10 47 44 PM](https://user-images.githubusercontent.com/28717686/153461036-98c8ecb8-1ab6-4107-95de-c0ce83ca1627.png)
