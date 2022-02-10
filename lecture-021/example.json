@@ -6,11 +6,7 @@
     "weight": "85kgs",
     "isAvenger": true,
     "isCaptain": false,
-    "address": {
-      "city": "Bangalore",
-      "state": "Karnataka",
-      "country": "India"
-    }
+    "address": { "city": "Bangalore", "state": "Karnataka", "country": "India" }
   },
   {
     "name": "Rajesh Sharma",
@@ -19,10 +15,15 @@
     "weight": "80kgs",
     "isAvenger": true,
     "isCaptain": false,
-    "address": {
-      "city": "Bangalore",
-      "state": "Karnataka",
-      "country": "India"
-    }
+    "address": { "city": "Bangalore", "state": "Karnataka", "country": "India" }
+  },
+  {
+    "name": "Manish Malhotra",
+    "age": "28",
+    "height": "5.8",
+    "weight": "65",
+    "isAvenger": true,
+    "isCaptain": false,
+    "address": { "city": "Bangalore", "state": "Karnataka", "country": "India" }
   }
 ]
