@@ -1,0 +1,13 @@
+{
+  "name": "Milind Mishra",
+  "age": 23,
+  "height": "5'11",
+  "weight": "85kgs",
+  "isAvenger": true,
+  "isCaptain": false,
+  "address": {
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India"
+  }
+}
