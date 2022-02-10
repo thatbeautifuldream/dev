@@ -35,7 +35,7 @@
 - for a null value in JSON, we use null without quotes
 - after last property we do not need a comma
 - if a comma is given after a property JSON expects another property after it
-- to keep multiple objects in a single JSON file, we use an array
+- to keep multiple objects in a single JSON file, we use an **array**
 
 ```json
 [
