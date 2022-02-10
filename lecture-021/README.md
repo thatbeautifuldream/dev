@@ -233,3 +233,29 @@ log("File written successfully");
 [{"name":"Milind Mishra","age":23,"height":"5'11","weight":"85kgs","isAvenger":true,"isCaptain":false,"address":{"city":"Bangalore","state":"Karnataka","country":"India"}},{"name":"Rajesh Sharma","age":25,"height":"5'10","weight":"80kgs","isAvenger":true,"isCaptain":false,"address":{"city":"Bangalore","state":"Karnataka","country":"India"}},{"name":"Manish Malhotra","age":"28","height":"5.8","weight":"65","isAvenger":true,"isCaptain":false,"address":{"city":"Bangalore","state":"Karnataka","country":"India"}}]
 File written successfully
 ```
+
+## Alternatively without using fs module use `const jsonFile = require("./example.json");`
+
+```js
+// all the buffer data conversion to string and all strings conversion to JSON is now not required
+const jsonFile = require("./example.json");
+// all data is now an array of objects stored in jsonFile variable
+
+const log = console.log;
+
+jsonFile.push({
+  name: "Manish Malhotra",
+  age: "28",
+  height: "5.8",
+  weight: "65",
+  isAvenger: true,
+  isCaptain: false,
+  address: {
+    city: "Bangalore",
+    state: "Karnataka",
+    country: "India",
+  },
+});
+
+log(jsonFile);
+```
