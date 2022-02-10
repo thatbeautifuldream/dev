@@ -98,3 +98,59 @@
 ```
 
 - A _good coding practice_ while making multiple object JSON while using an array and not change the sequence of key value pairs
+
+## API _Application Programming Interface_
+
+- This simple JSON that we created can be called a small API
+- It is a way to communicate with other programs
+- It can be used to fetch details here in this case we are using it to fetch details of a `person`
+- JSON API [examples](https://jsonapi.org/examples/)
+
+> `funWithJson.js`
+
+```js
+const log = console.log;
+const fs = require("fs");
+
+// whenever a file is read it gets read as a buffer data
+let buffer = fs.readFileSync("example.json");
+log(buffer);
+// to parse the buffer we need to convert it to a string
+let json = buffer.toString();
+log(json);
+```
+
+> Output :
+
+```bash
+> node funWithJson.js
+<Buffer 5b 0a 20 20 7b 0a 20 20 20 20 22 6e 61 6d 65 22 3a 20 22 4d 69 6c 69 6e 64 20 4d 69 73 68 72 61 22 2c 0a 20 20 20 20 22 61 67 65 22 3a 20 32 33 2c 0a ... 449 more bytes>
+[
+  {
+    "name": "Milind Mishra",
+    "age": 23,
+    "height": "5'11",
+    "weight": "85kgs",
+    "isAvenger": true,
+    "isCaptain": false,
+    "address": {
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India"
+    }
+  },
+  {
+    "name": "Rajesh Sharma",
+    "age": 25,
+    "height": "5'10",
+    "weight": "80kgs",
+    "isAvenger": true,
+    "isCaptain": false,
+    "address": {
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India"
+    }
+  }
+]
+```
