@@ -259,3 +259,7 @@ jsonFile.push({
 
 log(jsonFile);
 ```
+
+## Working with Excel files
+
+- Install xlsx library using `npm install xlsx`
