@@ -96,3 +96,5 @@
   }
 ]
 ```
+
+- A _good coding practice_ while making multiple object JSON while using an array and not change the sequence of key value pairs
