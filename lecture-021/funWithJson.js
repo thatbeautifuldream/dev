@@ -52,7 +52,7 @@ xlsx.writeFile(newWB, "file.xlsx"); // write the workbook to a file
 
 // reading the excel file
 
-let wb = xlsx.readFile(filePath);
-let excelData = wb.Sheets[sheetName];
-let ans = xlsx.utils.sheet_to_json(excelData);
-console.log(ans);
+let wb = xlsx.readFile("./file.xlsx"); // read the file
+let excelData = wb.Sheets["persons"]; // get the sheet
+let ans = xlsx.utils.sheet_to_json(excelData); // convert the sheet to json
+console.log(ans); // print the json data

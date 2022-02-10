@@ -320,3 +320,13 @@ xlsx.writeFile(newWB, "file.xlsx"); // write the workbook to a file
 ```
 
 ![Screenshot 2022-02-10 at 10 47 44 PM](https://user-images.githubusercontent.com/28717686/153461036-98c8ecb8-1ab6-4107-95de-c0ce83ca1627.png)
+
+```js
+// reading the excel file
+
+let wb = xlsx.readFile("./file.xlsx"); // read the file
+let excelData = wb.Sheets["persons"]; // get the sheet
+let ans = xlsx.utils.sheet_to_json(excelData); // convert the sheet to json
+console.log(ans); // print the json data
+```
+
