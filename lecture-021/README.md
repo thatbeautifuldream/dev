@@ -24,7 +24,7 @@
 }
 ```
 
-## Notes
+## `JSON` things to know
 
 - JSON is a text format
 - **JSON** is an acronym for `JavaScript Object Notation`
