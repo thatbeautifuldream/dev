@@ -151,3 +151,54 @@ f3p.then(cb);
 ```
 
 - Visualise Callback queue, Micro task queue, Call Stack, Node APIs and Event Loop [HERE 🙌🏻](https://www.jsv9000.app)
+
+## Making JavaScript to read files serially explicitly using callbacks
+
+```js
+const fs = require("fs");
+
+console.log("Before");
+
+// read files serially :
+
+fs.readFile("f1.txt", cb1);
+
+function cb1(err, data) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("File data :" + data);
+    fs.readFile("f2.txt", cb2);
+  }
+}
+
+function cb2(err, data) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("File data :" + data);
+    fs.readFile("f3.txt", cb3);
+  }
+}
+
+function cb3(err, data) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("File data :" + data);
+  }
+}
+
+console.log("After");
+```
+
+> Output :
+
+```bash
+> node readingFilesSerailly.js
+Before
+After
+File data :I am f1.txt
+File data :I am f2.txt
+File data :I am f3.txt
+```

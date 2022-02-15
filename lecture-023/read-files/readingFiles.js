@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { clearScreenDown } = require("readline");
 const log = console.log;
 
 let f1p = fs.promises.readFile("f1.txt");
