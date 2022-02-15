@@ -99,7 +99,7 @@ setTimeout(() => {
 
 ## Promises [READ HERE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
-> Construction a promise
+> Construction of promise ✅
 
 ```js
 const log = console.log;
@@ -120,7 +120,7 @@ let promise = new Promise(function (resolve, reject) {
 promise
   .then(function (data) {
     log(data);
-  })
+  })✅
   .catch(function (err) {
     log(err);
   });
