@@ -202,3 +202,7 @@ File data :I am f1.txt
 File data :I am f2.txt
 File data :I am f3.txt
 ```
+
+- Home work : read files serially using promises
+
+> Hint 😵‍💫 : use .then() method to chain the promises individually to read the files
