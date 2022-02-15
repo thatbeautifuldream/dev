@@ -25,6 +25,9 @@
 | Rejected      | The promise has rejected.                                                                     |
 | Settled       | The promise has resolved or rejected.                                                         |
 
+![promises](https://user-images.githubusercontent.com/28717686/154107724-bfc90cf1-52ba-460f-bab7-f676e56cce02.png)
+
+
 ## Practical deepdive to Promises and coding practices
 
 - Understanding promises in JavaScript handling async code
