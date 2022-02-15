@@ -120,7 +120,7 @@ let promise = new Promise(function (resolve, reject) {
 promise
   .then(function (data) {
     log(data);
-  })✅
+  })
   .catch(function (err) {
     log(err);
   });
