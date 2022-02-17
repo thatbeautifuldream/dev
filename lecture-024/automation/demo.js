@@ -22,7 +22,7 @@ browserWillBeLaunchedPromise
   })
   .then(function (newTab) {
     console.log("New tab is created");
-    return newTab.goto("https://milindmishra.me"); // new tab is loaded (promise is resolved)
+    return newTab.goto(loginLink); // new tab is loaded (promise is resolved)
   })
   .then(function () {
     console.log("Opened https://milindmishra.me in the browser");
