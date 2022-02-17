@@ -88,7 +88,7 @@ File data : text from f2
 File data : text from f3
 ```
 
-## Automation using JavaScript | Puppeteer
+## Automation using JavaScript | Puppeteer | `npm i puppeteer`
 
 > Puppeteer is a Node.js module that allows you to automate interactions with websites and web applications.
 
@@ -128,4 +128,21 @@ log("After");
 
 ![Screenshot 2022-02-17 at 10 24 15 PM](https://user-images.githubusercontent.com/28717686/154531241-dfb19949-a5bc-426e-9656-03b4c5cecf31.png)
 
+- Opening a new tab and navigating to a page
 
+```js
+browserWillBeLaunchedPromise
+  .then(function (browser) {
+    //   console.log("Browser is launched");
+    //   return browser; // browser launched (promise is resolved)
+    let newTabPromise = browser.newPage(); // returns a promise (pending)
+    return newTabPromise; // new tab is created (promise is resolved)
+  })
+  .then(function (newTab) {
+    console.log("New tab is created");
+    return newTab.goto("https://milindmishra.me"); // new tab is loaded (promise is resolved)
+  })
+  .then(function () {
+    console.log("New tab is loaded");
+  });
+```
