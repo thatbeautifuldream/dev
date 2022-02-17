@@ -150,6 +150,10 @@ browserWillBeLaunchedPromise
 
 ## HackerRank Web Automation ⚡️
 
+> Grabbing the relivant id's
+
+![Screenshot 2022-02-17 at 11 22 55 PM](https://user-images.githubusercontent.com/28717686/154547172-f4ecd6ca-2011-4270-bd98-ce9ea7a8916f.png)
+
 ```js
 const loginLink = "https://www.hackerrank.com/auth/login";
 const log = console.log;
