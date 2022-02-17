@@ -1,4 +1,4 @@
-# Lecture 24 | Promises and Beyond Automation using JavaScript
+# Lecture 24 | Promises and beyond, Automation using JavaScript
 
 - Reading files serially using Promises
 
