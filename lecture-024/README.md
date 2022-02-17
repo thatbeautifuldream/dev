@@ -107,7 +107,6 @@ const log = console.log;
 // to see the browser in action, keep headless = false
 let browserWillBeLaunchedPromise = pptr.launch({
   headless: false,
-  rgs: ["--start-fullscreen", "--start-maximized", "--screen-size=1920,1080"],
   defaultViewport: null,
 }); // returns a promise (pending)
 // defaultViewport is the default viewport size and setting it to null helps normal view

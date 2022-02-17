@@ -8,7 +8,6 @@ log("Before");
 // to see the browser in action, keep headless = false
 let browserWillBeLaunchedPromise = pptr.launch({
   headless: false,
-  rgs: ["--start-fullscreen", "--start-maximized", "--screen-size=1920,1080"],
   defaultViewport: null,
 }); // returns a promise (pending)
 
@@ -26,7 +25,7 @@ browserWillBeLaunchedPromise
     return newTab.goto("https://milindmishra.me"); // new tab is loaded (promise is resolved)
   })
   .then(function () {
-    console.log("Openined milindmishra.me");
+    console.log("Opened https://milindmishra.me in the browser");
   });
 
 log("After");
