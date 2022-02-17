@@ -119,3 +119,13 @@ browserWillBeLaunchedPromise.then(function (browser) {
 
 log("After");
 ```
+
+> Code :
+
+![Screenshot 2022-02-17 at 10 24 19 PM](https://user-images.githubusercontent.com/28717686/154531220-676119ba-1154-4613-a109-4a021341a722.png)
+
+> Chromium Instance
+
+![Screenshot 2022-02-17 at 10 24 15 PM](https://user-images.githubusercontent.com/28717686/154531241-dfb19949-a5bc-426e-9656-03b4c5cecf31.png)
+
+
