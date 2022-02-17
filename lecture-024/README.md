@@ -204,3 +204,6 @@ browserWillbeLauncedPromise
 
 console.log("After");
 ```
+> Preview :
+
+![gif](https://user-images.githubusercontent.com/28717686/154546934-df56287f-f7f0-4572-9803-e30191c0f82c.gif)
