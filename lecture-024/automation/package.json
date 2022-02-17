@@ -1,0 +1,14 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "Automation basics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milind Mishra",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^13.3.2"
+  }
+}
