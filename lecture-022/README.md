@@ -5,10 +5,6 @@
 - map() iterates over each element of the array and returns a new array with the results of the callback function
 - filter() returns true false for each element of the array and returns a new array with the elements that return true
 
-```js
-// map filter example
-```
-
 ## Question 01
 
 - Get the number of products whose price is atleast 100.
