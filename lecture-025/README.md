@@ -1,3 +1,3 @@
 # Automation Lecture
 
-- missed it due to papers
+- added files in the repository

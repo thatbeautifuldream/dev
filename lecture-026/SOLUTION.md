@@ -1,12 +1,12 @@
-# JavaScript Test
+# JavaScript Test Solutions
 
 > Set of Questions
 
 ```js
 // // < --------------Question 1----------------->
 
-// let randomValue = { name: "Lydia" };
-// randomValue = 23;
+// let randomValue = { name: "Lydia" }; // <-- this is a object of string
+// randomValue = 23; // <-- this is a number
 
 // if (!typeof randomValue === "string") {
 //   console.log("It's not a string!");
@@ -15,7 +15,7 @@
 // }
 
 // A: It's not a string!
-// B (*) : Yay it's a string!
+// B : Yay it's a string! ✅
 // C: TypeError
 // D: undefined
 
@@ -32,7 +32,7 @@
 // console.log(user.email)
 
 // A: my@email.com
-// B: new@email.com
+// B: new@email.com ✅
 // C: undefined
 // D: ReferenceError
 
@@ -47,7 +47,7 @@
 
 // A: ['🍌', '🍊', '🍎']
 // B: ['🍊', '🍎']
-// C: ['🍇', '🍊', '🍎']
+// C: ['🍇', '🍊', '🍎'] ✅
 // D: ['🍇', '🍌', '🍊', '🍎']
 
 // // < --------------Question 4----------------->
