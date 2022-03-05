@@ -1,14 +1,14 @@
-console.log('Hello from the console!');
+console.log("Hello from the console!");
 // alert('Hello from the alert!');
 // prompt('What is your name?');
 // confirm('Are you sure?');
 // document.write('Hello from the document!');
 // document.write('<h1>Hello from the document!</h1>');
 
-// Variables : 
+// Variables :
 var a; // variable initialised with undefined
 console.log(a);
-a = 'I am a String'; // possible to reassign a variable with diffrent data types
+a = "I am a String"; // possible to reassign a variable with diffrent data types
 console.log(a);
 var a = true; // possible to redeclare here boolean : true or false
 // not good to be able to redeclare a variable with the same name! leads to lot of missunderstanding
@@ -18,10 +18,10 @@ var a = true; // possible to redeclare here boolean : true or false
 // A language is dynamically-typed if the type of a variable is checked during run-time.
 // Common examples of dynamically-typed languages includes JavaScript, Objective-C, PHP, Python, Ruby, Lisp, and Tcl.
 
-a = 3
+a = 3;
 console.log(a);
 
-a = 'I am a String';
+a = "I am a String";
 console.log(a);
 
 a = true;
@@ -37,22 +37,21 @@ console.log(a);
 // Null
 // Undefined
 
-
 // Var has some problems  - Redeclaration
-var b = 'hello';
-var b = 'bye';
+var b = "hello";
+var b = "bye";
 console.log(b);
 
 // overcomming redeclaration : we use let keyword
 
-let b = 'hello';
-let b = 'bye';
+let b = "hello";
+let b = "bye";
 console.log(a); // this will not work! Identifier 'b' has already been declared
 
 // multiple redeclarations not allowed in let
 
-let b = 'hello';
-b = 'bye';
+let b = "hello";
+b = "bye";
 console.log(b);
 // reassignment is allowed in let
 
@@ -63,70 +62,65 @@ console.log(b);
 
 // Loops in Js (Iterative Statements)
 
-for(var i = 0; i < 5; i++) {
-    console.log(i);
+for (var i = 0; i < 5; i++) {
+  console.log(i);
 }
 
 // program to check if a number is prime or not
-var flag = true
-var num = 13
-for(var i = 2; i*i < num; i++) {
-    if(num % i == 0) {
-        flag = false
-        break
-    }
+var flag = true;
+var num = 13;
+for (var i = 2; i * i < num; i++) {
+  if (num % i == 0) {
+    flag = false;
+    break;
+  }
 }
-if(flag) {
-    console.log(num + ' is a prime number')
-}
-else {
-    console.log(num + ' is not a prime number')
+if (flag) {
+  console.log(num + " is a prime number");
+} else {
+  console.log(num + " is not a prime number");
 }
 
 // The second problem with var - scoping problem
 
-if(true) {
-    var x = 5;
-    console.log(x); // var keyword is function scoped!
+if (true) {
+  var x = 5;
+  console.log(x); // var keyword is function scoped!
 }
 console.log(x); // this can be accessed outside the if block as well!
 // this is problamatic!
 
-
-if(true) {
-    let x = 5;
-    console.log(x); // let keyword is block scoped!
+if (true) {
+  let x = 5;
+  console.log(x); // let keyword is block scoped!
 }
 console.log(x); // this will not work! Identifier 'x' has not been declared
 
-
-// const 
+// const
 
 const a = 5;
 console.log(a);
 a = 10; // this will not work!
 
-
 // functions in Js
 
 function sayHello() {
-    console.log('Hello');
-}   // function declaration
+  console.log("Hello");
+} // function declaration
 
 sayHello(); // function invocation
-
 
 // pass parameters in a function
 
 function add(a, b) {
-    console.log(a + b);
+  console.log(a + b);
 }
-add(3,4);
+add(3, 4);
 
 function mult(a, b) {
-    return (a * b);
+  return a * b;
 }
-console.log(mult(3,4));
+console.log(mult(3, 4));
 
 // functions as first class citizens
 // js does not diffrentiate between functions and variables
@@ -134,21 +128,22 @@ console.log(mult(3,4));
 // functions can be returned from other functions
 // functions can be assigned to variables
 
-let sayHi = function() { // anonymous function
-    console.log('Hi'); // in js functions are first class citizens
-} // function expression
+let sayHi = function () {
+  // anonymous function
+  console.log("Hi"); // in js functions are first class citizens
+}; // function expression
 sayHi(); // is being called later on
 
 // IIFE (Immediately Invoked Function Expression)
 
-let add = (function(a,b) {
-    return (a + b);
-})(3,4); // this is called immediately invoked function expression
+let add = (function (a, b) {
+  return a + b;
+})(3, 4); // this is called immediately invoked function expression
 console.log(add);
 
-let substract = (function(a,b) {
-    return (a-b);
-})(200,40);
+let substract = (function (a, b) {
+  return a - b;
+})(200, 40);
 console.log(substract);
 
 // IIFE can be used in web automation
@@ -160,4 +155,4 @@ console.log(substract);
 // let keyword is block scoped
 // const keyword is block scoped
 
-// if java is car js is carpet 
+// side note : `if java is car js is carpet` all in all js and java are unrelated
