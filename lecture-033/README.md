@@ -6,3 +6,7 @@
 
 - Build strong DOM Fundamentals
 - Build a ToDo List with sorting and filtering capabilities
+
+## Jira Screenshot
+
+![jira](https://user-images.githubusercontent.com/28717686/159302277-d69000c2-b00f-4ea7-8ccb-004245eff25d.png)
