@@ -152,3 +152,8 @@ var {
 console.log(city); // New York
 console.log(state); // NY
 ```
+
+## Arrow Functions
+
+- Arrow functions are a new syntactic construct in JavaScript.
+- Arrow functions are a concise way to write function expressions.
