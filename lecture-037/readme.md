@@ -2,11 +2,11 @@
 
 ## Flow of topics
 
-    - [Spread Operator](https://www.programiz.com/javascript/spread-operator)
-    - Destructuring
-    - Arrow Functions
-    - Higher Order Functions (map, filter, reduce)
-    - this keyword
+- [Spread Operator](https://www.programiz.com/javascript/spread-operator)
+- Destructuring
+- Arrow Functions
+- Higher Order Functions (map, filter, reduce)
+- this keyword
 
 ## Spread operator
 
