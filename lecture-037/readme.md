@@ -4,9 +4,9 @@
 
 - [Spread Operator](https://www.programiz.com/javascript/spread-operator)
 - Destructuring
+- this keyword
 - Arrow Functions
 - Higher Order Functions (map, filter, reduce)
-- this keyword
 
 ## Spread operator
 
@@ -153,7 +153,21 @@ console.log(city); // New York
 console.log(state); // NY
 ```
 
+## this keyword
+
+- The this keyword is used to refer to the current object.
+- We need to understand two environment variables:
+  - global object
+  - local object
+- Js can be used in two environments:
+  - Browser
+  - Node
+- In browser, the global object is window object.
+- In node, the global object is global object.
+
 ## Arrow Functions
 
 - Arrow functions are a new syntactic construct in JavaScript.
 - Arrow functions are a concise way to write function expressions.
+
+> (Will be discussed in the next section)
