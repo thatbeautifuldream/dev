@@ -233,3 +233,8 @@ let s1 = new Student("Jane", 25, "A");
 s1.sayName(); // Jane
 s1.sayGrade(); // A
 ```
+
+- The super keyword is used to call the parent class constructor, methods and properties.
+- Syntax: `super(parameters)` where parameters are the parameters of the parent class constructor.
+- These super call are done in child class constructor which is called when we create an object using the child class.
+- These properties gets inherited from the parent class.
