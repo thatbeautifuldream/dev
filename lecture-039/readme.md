@@ -235,3 +235,34 @@ ReactDOM.render(<Parent />, document.querySelector(".root"));
 
 ![scr 2022-04-15 at 10 48 42 PM](https://user-images.githubusercontent.com/28717686/163601118-31300f1f-c9aa-46e4-a53c-9c97f545e6a6.png)
 
+## Counter in React
+
+- Implementing counter in React using class component.
+- Using class based component we can use state.
+- React.Component is a base class for all React components when we extend it we can use all the methods of React.Component.
+
+```jsx
+class Counter extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      count: 0,
+    };
+  }
+  render() {
+    return (
+      <div>
+        <h1>Counter</h1>
+        <h2>{this.state.count}</h2>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          +
+        </button>
+        <button onClick={() => this.setState({ count: this.state.count - 1 })}>
+          -
+        </button>
+      </div>
+    );
+  }
+}
+ReactDOM.render(<Counter />, document.querySelector(".root"));
+```
