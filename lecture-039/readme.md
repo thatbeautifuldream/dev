@@ -229,4 +229,9 @@ ReactDOM.render(<Parent />, document.querySelector(".root"));
 
 - Showing usage of multiple props in the child component.
 
+![scr 2022-04-15 at 10 48 26 PM](https://user-images.githubusercontent.com/28717686/163601112-a47504af-d868-4f06-90e9-28fa07436252.png)
+
 - Dev tools shows multiple props as `props` tab.
+
+![scr 2022-04-15 at 10 48 42 PM](https://user-images.githubusercontent.com/28717686/163601118-31300f1f-c9aa-46e4-a53c-9c97f545e6a6.png)
+
