@@ -235,7 +235,7 @@ ReactDOM.render(<Parent />, document.querySelector(".root"));
 
 ![scr 2022-04-15 at 10 48 42 PM](https://user-images.githubusercontent.com/28717686/163601118-31300f1f-c9aa-46e4-a53c-9c97f545e6a6.png)
 
-## Counter in React
+## Counter in React with class based component
 
 - Implementing counter in React using class component.
 - Using class based component we can use state.
@@ -290,3 +290,9 @@ class Component extends React.Component {
 
 - constructor() is a special method that is called when the class based component is created.
 - super() is a special method that is called when the class based component is created which is used to call the constructor of the parent class ans pass the props to the parent class.
+
+## State
+
+- State is a plain JavaScript object that is used to record and react to user events.
+- React gives a special methord to change properties of a component called setState() which is used to change the state of a component.
+- this.setState() is a method that is called to change the state of a component.
