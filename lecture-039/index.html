@@ -32,10 +32,20 @@
         // ReactDOM.render(ele, document.querySelector('.root'));
 
         // Functional Component
-        function Element() {
+        // function Element() {
+        //     return (<h1>Hello</h1>);
+        // }
+        // ReactDOM.render(<Element />, document.querySelector('.root'));
+
+        function Child() {
             return (<h1>Hello</h1>);
         }
-        ReactDOM.render(<Element />, document.querySelector('.root'));
+        function Parent() {
+            return (<div>
+                <Child />
+            </div>);
+        }
+        ReactDOM.render(<Parent />, document.querySelector('.root'));
     </script>
 </body>
 

@@ -105,3 +105,18 @@
 - Babel is a transpiler that takes JSX and converts it to JavaScript.
 - Alternatives to it are SWC transpiler and Webpack.
 - Webpack is a module bundler.
+
+## Child and Parent Components
+
+```jsx
+function Child() {
+  return <h1>Hello</h1>;
+}
+function Parent() {
+  return <Child />;
+}
+ReactDOM.render(<Parent />, document.querySelector(".root"));
+```
+
+- Note in order to use multiple child components we need to wrap them in a parent component and then render it.
+- Common convention is to wrap them inside a div or an empty element `<> </>`
