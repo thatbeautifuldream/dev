@@ -97,11 +97,38 @@
 ```
 
 - In order to use react we need react and react-dom cdn.
+
+```html
+<script
+  crossorigin
+  src="https://unpkg.com/react@18/umd/react.development.js"
+></script>
+<script
+  crossorigin
+  src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+></script>
+```
+
 - Inorder to render anything using react we use, `ReactDOM.render(<element to render>, <where to render>);`
 - Inorder to use JSX Syntax we need to transpile it using babel.
 - To use babel we use cdn links in the head section.
+
+```html
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+
 - Babel is a compiler that transforms JavaScript code into a format that can be run by a JavaScript engine.
 - In order for the browser to use the babel we need to tell that script type is `text/babel`.
+
+```html
+<script type="text/babel">
+  function Element() {
+    return <h1>Hello</h1>;
+  }
+  ReactDOM.render(<Element />, document.querySelector(".root"));
+</script>
+```
+
 - Babel is a transpiler that takes JSX and converts it to JavaScript.
 - Alternatives to it are SWC transpiler and Webpack.
 - Webpack is a module bundler.
