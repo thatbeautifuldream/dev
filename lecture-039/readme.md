@@ -266,3 +266,8 @@ class Counter extends React.Component {
 }
 ReactDOM.render(<Counter />, document.querySelector(".root"));
 ```
+![scr 2022-04-15 at 11 13 11 PM](https://user-images.githubusercontent.com/28717686/163603578-4adafd9d-43fd-40d8-a213-ab051d9605ec.gif)
+
+
+![scr 2022-04-15 at 11 14 28 PM](https://user-images.githubusercontent.com/28717686/163603597-98ee4170-cbad-490a-a79b-c7e452d1a955.png)
+
