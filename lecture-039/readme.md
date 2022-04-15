@@ -171,3 +171,27 @@ ReactDOM.render(<Parent />, document.querySelector(".root"));
 - Inorder to see components we can use react developer tools, in the development build.
 
 ![scr 2022-04-15 at 10 26 11 PM](https://user-images.githubusercontent.com/28717686/163598784-17904774-ba2f-465c-a880-2b8f0dd040dc.png)
+
+## Props
+
+- Props are the properties of a component that are passed to it.
+- Props are used to pass diffrent data to a component.
+- Props can be passed to a component using `props` keyword.
+- Independently we can pass props using the {`prop-name`} syntax.
+
+```jsx
+function Child({ name }) {
+  return <h1>Hello {name}</h1>;
+}
+function Parent() {
+  return (
+    <div>
+      <Child name="Milind" />
+      <Child name="Mrinal" />
+      <Child name="Anuj" />
+    </div>
+  );
+}
+ReactDOM.render(<Parent />, document.querySelector(".root"));
+```
+
