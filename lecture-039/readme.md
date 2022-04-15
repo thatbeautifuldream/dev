@@ -119,4 +119,22 @@ ReactDOM.render(<Parent />, document.querySelector(".root"));
 ```
 
 - Note in order to use multiple child components we need to wrap them in a parent component and then render it.
-- Common convention is to wrap them inside a div or an empty element `<> </>`
+- Common convention is to wrap them inside a div or an empty element `<> </>` popularly known as react fragment.
+
+```jsx
+function Child() {
+  return <h1>Hello</h1>;
+}
+function Parent() {
+  return (
+    <>
+      <Child />
+      <Child />
+      <Child />
+    </>
+  );
+}
+ReactDOM.render(<Parent />, document.querySelector(".root"));
+```
+
+- This will show 3 child components with same Hello text.
