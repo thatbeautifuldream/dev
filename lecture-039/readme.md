@@ -202,3 +202,31 @@ ReactDOM.render(<Parent />, document.querySelector(".root"));
 - Props in dev tools are shown as `props` tab.
 
 ![scr 2022-04-15 at 10 43 18 PM](https://user-images.githubusercontent.com/28717686/163600503-1fb8d70e-761d-4675-84f0-cb24b9b53cd9.png)
+
+- Passing multiple props to a component.
+
+```jsx
+function Child({ name, age, marks }) {
+  return (
+    <div>
+      <h1>Hello {name}</h1>
+      <h2>Age: {age}</h2>
+      <h2>Marks: {marks}</h2>
+    </div>
+  );
+}
+function Parent() {
+  return (
+    <div>
+      <Child name="Milind" age="22" marks="69" />
+      <Child name="Mrinal" marks="65" />
+      <Child name="Anuj" age="20" />
+    </div>
+  );
+}
+ReactDOM.render(<Parent />, document.querySelector(".root"));
+```
+
+- Showing usage of multiple props in the child component.
+
+- Dev tools shows multiple props as `props` tab.

@@ -37,14 +37,18 @@
         // }
         // ReactDOM.render(<Element />, document.querySelector('.root'));
 
-        function Child({ name }) {
-            return (<h1>Hello {name}</h1>);
+        function Child({ name, age, marks }) {
+            return (<div>
+                <h1>Hello {name}</h1>
+                <h2>Age: {age}</h2>
+                <h2>Marks: {marks}</h2>
+            </div>);
         }
         function Parent() {
             return (<div>
-                <Child name="Milind" />
-                <Child name="Mrinal" />
-                <Child name="Anuj" />
+                <Child name="Milind" age="22" marks="69" />
+                <Child name="Mrinal" marks="65" />
+                <Child name="Anuj" age="20" />
             </div>);
         }
         ReactDOM.render(<Parent />, document.querySelector('.root'));
