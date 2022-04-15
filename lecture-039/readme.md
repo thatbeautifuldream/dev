@@ -274,3 +274,19 @@ ReactDOM.render(<Counter />, document.querySelector(".root"));
 - Displaying counter in dev tools.
 
 ![scr 2022-04-15 at 11 14 28 PM](https://user-images.githubusercontent.com/28717686/163603597-98ee4170-cbad-490a-a79b-c7e452d1a955.png)
+
+- Understanding the class based component, the React.Component class consists of all the important methods of React.Component like render, componentDidMount, componentDidUpdate, componentWillUnmount... etc.
+- render() is the method that is called to render the component which takes in JSX input and returns a React element.
+- At the end we still need to call the ReactDOM.render() method to render the component and pass in the class based component as an argument in simmilar to the functional component.
+- The class based component has a structure same as that of a class in js.
+
+```jsx
+class Component extends React.Component {
+  constructor() {
+    super();
+  }
+}
+```
+
+- constructor() is a special method that is called when the class based component is created.
+- super() is a special method that is called when the class based component is created which is used to call the constructor of the parent class ans pass the props to the parent class.
