@@ -141,5 +141,6 @@ ReactDOM.render(<Parent />, document.querySelector(".root"));
 
 ![scr 2022-04-15 at 10 22 15 PM](https://user-images.githubusercontent.com/28717686/163598410-f8679702-eeba-4352-8ee3-55da2b8d6f04.png)
 
-![scr 2022-04-15 at 10 26 11 PM](https://user-images.githubusercontent.com/28717686/163598784-17904774-ba2f-465c-a880-2b8f0dd040dc.png)
+- Inorder to see components we can use react developer tools, in the development build.
 
+![scr 2022-04-15 at 10 26 11 PM](https://user-images.githubusercontent.com/28717686/163598784-17904774-ba2f-465c-a880-2b8f0dd040dc.png)
