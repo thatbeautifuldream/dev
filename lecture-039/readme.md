@@ -194,4 +194,9 @@ function Parent() {
 }
 ReactDOM.render(<Parent />, document.querySelector(".root"));
 ```
+![scr 2022-04-15 at 10 41 45 PM](https://user-images.githubusercontent.com/28717686/163600488-7970b99a-b0ea-4bb5-96b8-f30ce493efe6.png)
+
+![scr 2022-04-15 at 10 43 18 PM](https://user-images.githubusercontent.com/28717686/163600503-1fb8d70e-761d-4675-84f0-cb24b9b53cd9.png)
+
+
 
