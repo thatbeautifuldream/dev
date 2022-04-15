@@ -102,3 +102,6 @@
 - To use babel we use cdn links in the head section.
 - Babel is a compiler that transforms JavaScript code into a format that can be run by a JavaScript engine.
 - In order for the browser to use the babel we need to tell that script type is `text/babel`.
+- Babel is a transpiler that takes JSX and converts it to JavaScript.
+- Alternatives to it are SWC transpiler and Webpack.
+- Webpack is a module bundler.
