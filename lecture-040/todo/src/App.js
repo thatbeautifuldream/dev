@@ -3,7 +3,7 @@ import Todo from "./components/Todo";
 function App() {
   return (
     <>
-      <h1>Hello</h1>
+      <h1>Todo List</h1>
       <Todo />
     </>
   );
